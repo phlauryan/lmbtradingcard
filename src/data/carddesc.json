@@ -1,198 +1,109 @@
-[
-    {
-        "visu": "./images/test1.png",
-        "team": "monogygote",
-        "type": "holo",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test2.png",
-        "team": "monogygote",
-        "type": "vintage",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test3.png",
-        "team": "woom",
-        "type": "regulare",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test4.png",
-        "team": "woom",
-        "type": "alternate",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test1.png",
-        "team": "woom",
-        "type": "holo",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test2.png",
-        "team": "woom",
-        "type": "vintage",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test3.png",
-        "team": "woom",
-        "type": "regulare",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test4.png",
-        "team": "woom",
-        "type": "alternate",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test1.png",
-        "team": "woom",
-        "type": "holo",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test2.png",
-        "team": "cyclas",
-        "type": "vintage",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test3.png",
-        "team": "woom",
-        "type": "regulare",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test4.png",
-        "team": "cyclas",
-        "type": "alternate",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test1.png",
-        "team": "cyclas",
-        "type": "holo",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test2.png",
-        "team": "cyclas",
-        "type": "vintage",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test3.png",
-        "team": "cyclas",
-        "type": "regulare",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test4.png",
-        "team": "monogygote",
-        "type": "alternate",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test1.png",
-        "team": "monogygote",
-        "type": "holo",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test2.png",
-        "team": "monogygote",
-        "type": "vintage",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test3.png",
-        "team": "monogygote",
-        "type": "regulare",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test4.png",
-        "team": "woom",
-        "type": "alternate",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test1.png",
-        "team": "monogygote",
-        "type": "holo",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test2.png",
-        "team": "monogygote",
-        "type": "vintage",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test3.png",
-        "team": "team",
-        "type": "regulare",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test4.png",
-        "team": "team",
-        "type": "alternate",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test1.png",
-        "team": "team",
-        "type": "holo",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test2.png",
-        "team": "team",
-        "type": "vintage",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test3.png",
-        "team": "team",
-        "type": "regulare",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    },
-    {
-        "visu": "./images/test4.png",
-        "team": "team",
-        "type": "alternate",
-        "firstname": "firstname",
-        "lastname": "lastname"
-    }
-]
+[{"visu": "./images/animafond cyril classic.png","team": "animafond","type": "regulare","firstname": "cyril","lastname": "ravet"},
+{"visu": "./images/animafond cyril holo.png","team": "animafond","type": "regulare","firstname": "cyril","lastname": "ravet"},
+{"visu": "./images/animafond pierre classic.png","team": "animafond","type": "regulare","firstname": "pierre","lastname": "berger"},
+{"visu": "./images/animafond pierre holo.png","team": "animafond","type": "regulare","firstname": "pierre","lastname": "berger"},
+{"visu": "./images/animafond thomas classic.png","team": "animafond","type": "regulare","firstname": "thomas","lastname": "ravet"},
+{"visu": "./images/animafond thomas holo.png","team": "animafond","type": "regulare","firstname": "thomas","lastname": "ravet"},
+{"visu": "./images/bam eric classic.png","team": "bam","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/bam eric holo.png","team": "bam","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/calfrico jim classic.png","team": "calfrico","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/calfrico jim holo.png","team": "calfrico","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/calfrico lance holo.png","team": "calfrico","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/calfrico lance print.png","team": "calfrico","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/calfrico marco classic.png","team": "calfrico","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/calfrico marco holo.png","team": "calfrico","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/casse rayons damaris caire classic.png","team": "casse rayons","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/casse rayons damaris caire holo.png","team": "casse rayons","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/casse rayons jun king classic.png","team": "casse rayons","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/casse rayons jun king holo.png","team": "casse rayons","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/casse rayons Kiran Cottin classic.png","team": "casse rayons","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/casse rayons Kiran Cottin holo.png","team": "casse rayons","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/casse rayons MELISSA SCHACH classic.png","team": "casse rayons","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/casse rayons MELISSA SCHACH holo.png","team": "casse rayons","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas adrien auto.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas adrien classic.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas adrien holo.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas amos classic.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas amos holo.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas coco auto.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas coco classic.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas coco holo.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas jerem classic.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas jerem holo.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas jerem2 classic.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas jerem2 holo.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas remi classic.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas remi holo.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas thomas auto.png","team": "cyclas","type": "regulare","thomas": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas thomas classic.png","team": "cyclas","type": "regulare","thomas": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas thomas holo.png","team": "cyclas","type": "regulare","thomas": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas yann henry classic.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclas yann henry holo.png","team": "cyclas","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclone Elyott classic.png","team": "cyclone","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/cyclone Elyott holo.png","team": "cyclone","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/flip flap baptiste classic.png","team": "flip flap","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/flip flap baptiste holo.png","team": "flip flap","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/flip flap theo classic.png","team": "flip flap","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/flip flap theo holo.png","team": "flip flap","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monogre Sylvain GOBRON classic.png","team": "monogre","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monogre Sylvain GOBRON holo.png","team": "monogre","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monogygote David Ilcinkas classic.png","team": "monogygote","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monogygote David Ilcinkas holo.png","team": "monogygote","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monostars Adrien Grosay classic.png","team": "monostars","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monostars Adrien Grosay holo.png","team": "monostars","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monostars Alexis AVENEL classic.png","team": "monostars","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monostars Alexis AVENEL holo.png","team": "monostars","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monostars Vincent Briot classic.png","team": "monostars","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/monostars Vincent Briot holo.png","team": "monostars","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/rouletabille  Vincent de Carné-Carnavalet classic.png","team": "rouletabille","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/rouletabille  Vincent de Carné-Carnavalet holo.png","team": "rouletabille","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/troubadours Aurore MOTSCH classic.png","team": "troubadours","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/troubadours Aurore MOTSCH holo.png","team": "troubadours","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/troubadours loic faullimmel classic.png","team": "troubadours","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/troubadours loic faullimmel holo.png","team": "troubadours","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/troubadours Valentine STOEHR classic.png","team": "troubadours","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/troubadours Valentine STOEHR holo.png","team": "troubadours","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage Aidan Hanet.png","team": "Vintage","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage bareto.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage eric.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage franck.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage jojo.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage Julien.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage kyle campbell.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage Olivier TEMPEREAU 2.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage Olivier TEMPEREAU.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage seb toll.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/Vintage tieri.png","team": "todo","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom damien classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom damien holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom Emilien auto.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom emilien classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom emilien holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom florian classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom florian holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom geraud classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom geraud holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom Julien auto.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom julien classiv.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom julien holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom mathieux classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom mathieux holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom Maureen auto.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom Maureen classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom Maureen holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom nene classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom nene holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom nico classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom nico holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom pg auto.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom pg classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom pg holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom romain auto.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom romain classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom romain holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom seb auto.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom seb blanc classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom seb blanc holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom Vintage cedric mousset.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom zadig classic.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"},
+{"visu": "./images/woom zadig holo.png","team": "woom","type": "regulare","firstname": "firstname","lastname": "lastname"}]

@@ -2,8 +2,14 @@
 import cardsgroup from './components/cardsgroup.vue'
 import cards from './data/carddesc.json'
 import _ from 'lodash';
-const teams = ["woom", "monogygote", "cyclas", "team", "null"];
-const types = ["regulare", "alternate", "holo", "vintage"];
+let teams = [];
+let types = [];
+_.forEach(cards, function (card) {
+  teams.push(card.team);
+  types.push(card.type);
+});
+teams=_.uniq(teams);
+types=_.uniq(types);
 let groupsbyteam = [];
 _.forEach(teams, function (team) {
   groupsbyteam.push({
