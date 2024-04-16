@@ -1,47 +1,51 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import card from './components/card.vue'
+import cards from './data/carddesc.json'
+import _ from 'lodash';
+const teams = ["woom", "monogygote", "cyclas", "team", "null"];
+let groupbyteam = [];
+_.forEach(teams, function (team) {
+  groupbyteam.push({
+    groupname: team,
+    cards: _.filter(cards, function (card) { return card.team === team; })
+  });
+});
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <img src="./images/logo.png" />
   </header>
-
   <main>
-    <TheWelcome />
+    <h1>
+      team 1
+    </h1>
+    <tbody>
+      <tr>
+        <td v-for="card in cards">
+          <card :visu="card.visu" />
+          {{ card.team }}
+        </td>
+      </tr>
+    </tbody>
+
   </main>
 </template>
 
 <style scoped>
+* {
+  background-color: rgb(57, 60, 65);
+}
+
 header {
   line-height: 1.5;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+main {
+  img {
+    max-width: 170px;
+    padding: 20px;
   }
 }
 </style>
