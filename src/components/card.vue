@@ -9,5 +9,5 @@ defineProps({
 
 <template>
   <img :src="visu" />
-  test {{ visu }}
+
 </template>
