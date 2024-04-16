@@ -29,7 +29,7 @@ _.forEach(types, function (type) {
 
 <template>
   <header>
-    <img src="./images/logo.png" />
+    <img class="logo" src="./images/logo.png" />
   </header>
   <main>
     <div class="group" v-for="groupbyteam in groupsbyteam">
@@ -39,6 +39,17 @@ _.forEach(types, function (type) {
 </template>
 
 <style>
+@font-face {
+  font-family: 'MaPolice';
+  src: url("./font/olympiccarrierlaserital.ttf") format('truetype');
+}
+
+h1 {
+  font-family: 'MaPolice', sans-serif; 
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
 #app {
   display: flex;
   flex-flow: row wrap;
@@ -74,7 +85,7 @@ main {
   }
 
   img {
-    max-width: 270px;
+    max-width: 240px;
     padding: 20px;
   }
 }
