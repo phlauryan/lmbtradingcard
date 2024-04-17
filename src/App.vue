@@ -8,13 +8,13 @@ _.forEach(cards, function (card) {
   teams.push(card.team);
   types.push(card.type);
 });
-teams = _.uniq(teams);
-types = _.uniq(types);
+teams=_.uniq(teams);
+types=_.uniq(types);
 let groupsbyteam = [];
 _.forEach(teams, function (team) {
   groupsbyteam.push({
     groupname: team,
-    cards: _.filter(cards, function (card) { return card.team === team; }).sort((a, b) => a.type - b.type)
+    cards:_.filter(cards, function (card) { return card.team === team; }).sort((a,b)=>a.type.localeCompare(b.type))
   });
 });
 
@@ -22,7 +22,7 @@ let groupbytype = [];
 _.forEach(types, function (type) {
   groupbytype.push({
     groupname: type,
-    cards: _.filter(cards, function (card) { return card.type === type; })
+    cards: _.filter(cards, function (card) { return card.type === type; }).sort((a,b)=>a.team.localeCompare(b.team))
   });
 });
 
@@ -44,9 +44,11 @@ _.forEach(types, function (type) {
   font-family: 'MaPolice';
   src: url("./font/olympiccarrierlaserital.ttf") format('truetype');
 }
-
+.logo{
+  padding: 12px;
+}
 h1 {
-  font-family: 'MaPolice', sans-serif;
+  font-family: 'MaPolice', sans-serif; 
   text-transform: uppercase;
   font-size: 60px;
 }
@@ -85,9 +87,6 @@ main {
     color: white;
   }
 
-  img {
-    max-width: 240px;
-  }
 
 
 
