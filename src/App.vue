@@ -14,7 +14,7 @@ let groupsbyteam = [];
 _.forEach(teams, function (team) {
   groupsbyteam.push({
     groupname: team,
-    cards: _.filter(cards, function (card) { return card.team === team; })
+    cards: _.filter(cards, function (card) { return card.team === team; }).sort((a, b) => a.type - b.type)
   });
 });
 
