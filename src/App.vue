@@ -8,8 +8,8 @@ _.forEach(cards, function (card) {
   teams.push(card.team);
   types.push(card.type);
 });
-teams=_.uniq(teams);
-types=_.uniq(types);
+teams = _.uniq(teams);
+types = _.uniq(types);
 let groupsbyteam = [];
 _.forEach(teams, function (team) {
   groupsbyteam.push({
@@ -25,6 +25,7 @@ _.forEach(types, function (type) {
     cards: _.filter(cards, function (card) { return card.type === type; })
   });
 });
+
 </script>
 
 <template>
@@ -45,7 +46,7 @@ _.forEach(types, function (type) {
 }
 
 h1 {
-  font-family: 'MaPolice', sans-serif; 
+  font-family: 'MaPolice', sans-serif;
   text-transform: uppercase;
   font-size: 60px;
 }
@@ -86,7 +87,19 @@ main {
 
   img {
     max-width: 240px;
-    padding: 20px;
   }
+
+
+
+  .card-wrap {
+
+    display: grid;
+    place-content: center;
+    inset: 0;
+    transform-style: preserve-3d;
+    perspective: 800px;
+  }
+
+
 }
 </style>
