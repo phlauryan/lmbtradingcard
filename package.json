@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "git": "npm run build && git add . && git commit -m",
-    "postgit": "git push && git subtree push --prefix dist origin gh-pages3"
+    "postgit": "git push && git subtree push --prefix dist origin gh-pages4"
   },
   "dependencies": {
     "lodash": "^4.17.21",
