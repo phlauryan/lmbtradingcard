@@ -1,5 +1,5 @@
 <script setup>
-import cardsgroup from './components/cardsgroup.vue'
+import cardsgroup from './components/cards-group.vue'
 import cards from './data/carddesc.json'
 import _ from 'lodash';
 let teams = [];
