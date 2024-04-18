@@ -11,11 +11,11 @@ defineProps({
 const rotateY = ref('12deg');
 const rotateX = ref('14deg');
 let transition = ref('cubic-bezier(0.775, -0.555, 0.175, 1.650) 1s');
-const neg = setTimeout(function () {
+setTimeout(function () {
   rotateY.value = '-12deg';
   rotateX.value = '-14deg';
 }, 500);
-const raz = setTimeout(function () {
+setTimeout(function () {
   rotateY.value = '0deg';
   rotateX.value = '0deg';
 }, 1000);
@@ -23,6 +23,9 @@ const raz = setTimeout(function () {
 
 const glareY = ref('0px');
 const glareX = ref('0px');
+
+let shineX = ref('0%')
+let shineY = ref('0%')
 let offsetX = ref(0)
 let offsetY = ref(0)
 
@@ -44,6 +47,9 @@ function handleMouseMove(event) {
 
   glareX.value = x + 'px';
   glareY.value = y + 'px';
+
+  shineX.value = x + '%';
+  shineY.value = y + '%';
 };
 
 //mouvement quand je sort de la carte
@@ -82,6 +88,7 @@ window.addEventListener('scroll', function (event) {
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div class="rotate">
         <img class="card" :src="visu" />
+        <div class="shine"></div>
         <div class="card__glare"></div>
       </div>
     </div>
@@ -94,13 +101,29 @@ img {
 }
 
 /*
-a voir ombre ?. 
+  0 100% pointer
+.shine {
 
- .card-wrap::before {
-    inset: 0.75rem;
-    background: red;
-    transform: translateZ(-49px);
-  } */
+width: 100%;
+height: 100%;
+position: absolute;
+background-image: radial-gradient(farthest-corner ellipse at calc(((v-bind('shineX')) * 0.5) + 25%) calc(((v-bind('shineY')) * 0.5) + 25%), hsl(0, 0%, 100%) 5%, hsla(300, 100%, 11%, 0.6) 40%, hsl(0, 0%, 22%) 120%);
+background-position: center center;
+background-size: 400% 500%;
+filter: brightness(calc(v-bind('x')*0.2) + 0.4)) contrast(.85) saturate(1.1);
+mix-blend-mode: hard-light;
+}
+
+*/
+/*
+.shadow {
+  width: 100%;
+  height: 100%;
+  inset: 0.75rem;
+  background: red;
+  position: absolute;
+  transform: translateZ(2px);
+}*/
 
 .padding {
   padding: 20px;
@@ -113,7 +136,7 @@ a voir ombre ?.
 
 .rotate {
   transition: v-bind('transition');
-  /*box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   transform: rotateX(v-bind('rotateX')) rotateY(v-bind('rotateY'));
   /*transform: translate3d(0px, 0px, 0.01px);*/
 }
