@@ -7,7 +7,7 @@ defineProps({
   }
 })
 
-
+/* mouvement a l'affichage de la page*/
 const rotateY = ref('12deg');
 const rotateX = ref('14deg');
 let transition = ref('cubic-bezier(0.775, -0.555, 0.175, 1.650) 1s');
@@ -21,22 +21,14 @@ const raz = setTimeout(function () {
 }, 1000);
 
 
-
-
 const glareY = ref('0px');
 const glareX = ref('0px');
 let offsetX = ref(0)
 let offsetY = ref(0)
-/*cubic-bezier(0.25, 0.1, 0.25, 1.4) 1ms
-console.log(event.clientX);
-console.log(event.clientY);*/
 
-/*
-console.log(event.clientX);
-console.log(event.clientY);*/
+//mouvement de la carte fonction de la sourie
 function handleMouseMove(event) {
   transition.value = '';
-  /*console.log('kkcccc   ', event);*/
   const x = event.layerX;
   const y = event.layerY;
   const cardsizex = 278;/*278;*/
@@ -52,17 +44,16 @@ function handleMouseMove(event) {
 
   glareX.value = x + 'px';
   glareY.value = y + 'px';
-  console.log('rotation x:' + offsetX.value + ' y:' + offsetY.value);
 };
 
+//mouvement quand je sort de la carte
 function hoveroire() {
-  /* transition='cubic-bezier(0.465, -0.360, 0.360, 0.910) .8s';
-   rotateX.value = (offsetX*-0.5) + 'deg';
-   rotateY.value = ((-1 * offsetY)*-0.5) + 'deg';*/
   transition.value = 'cubic-bezier(0.775, -0.555, 0.175, 1.650) 1s';
   rotateY.value = '0deg';
   rotateX.value = '0deg';
 };
+
+//mouvement lors du scroll
 const startY = ref(0);
 var scroll;
 window.addEventListener('scroll', function (event) {
@@ -75,18 +66,15 @@ window.addEventListener('scroll', function (event) {
   }
   startY.value = scrollY;
 
-
-
   window.clearTimeout(scroll);
   transition.value = 'cubic-bezier(0.265, -0.375, 0.485, 0.800) .4s';
   rotateX.value = (10 * direction) + 'deg';
   scroll = setTimeout(function () {
-    /*  transition.value = 'cubic-bezier(0.240, 0.450, 0.465, 0.995) .4s';*/
-
     transition.value = 'cubic-bezier(0.775, -0.555, 0.175, 1.650) .75s';
     rotateX.value = '0deg';
   }, 100);
 }, false);
+
 </script>
 
 <template>
@@ -145,7 +133,4 @@ a voir ombre ?.
   mix-blend-mode: overlay;
 
 }
-
-
-.card:hover {}
 </style>
