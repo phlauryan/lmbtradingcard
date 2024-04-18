@@ -58,11 +58,13 @@ h1 {
 #app {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 group {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 body {
@@ -80,6 +82,7 @@ header {
 main {
   div {
     display: flex;
+  justify-content: center;
     flex-flow: row wrap;
   }
 

@@ -28,18 +28,22 @@ let shineX = ref('0%')
 let shineY = ref('0%')
 let offsetX = ref(0)
 let offsetY = ref(0)
-
+let fromCenter = ref(0)
 //mouvement de la carte fonction de la sourie
 function handleMouseMove(event) {
+  let width =event.target.clientWidth
+  let height =event.target.clientHeight
+  
   transition.value = '';
   const x = event.layerX;
   const y = event.layerY;
-  const cardsizex = 278;/*278;*/
-  const cardsizey = 376;/*376;*/
+  console.log ('x: '+x+" y: "+y);
+  const cardsizex = width;/*278;*/
+  const cardsizey = height;/*376;*/
   const middleX = cardsizex / 2;
   const middleY = cardsizey / 2;
-  offsetX.value = ((x - middleX) / middleX) * 25;
-  offsetY.value = ((y - middleY) / middleY) * 30;
+  offsetX.value = ((x - middleX) / middleX) * 15;
+  offsetY.value = ((y - middleY) / middleY) * 20;
 
   // set rotation
   rotateY.value = -1 * offsetX.value + 'deg';
@@ -48,8 +52,10 @@ function handleMouseMove(event) {
   glareX.value = x + 'px';
   glareY.value = y + 'px';
 
-  shineX.value = x + '%';
-  shineY.value = y + '%';
+  shineX.value = (100/width)*x + '%';
+  shineY.value = (100/height)*y + '%';
+
+  fromCenter=  (Math.abs(width/2 -x) /(width/2) +Math.abs(height/2 -y) /(height/2))/2
 };
 
 //mouvement quand je sort de la carte
@@ -100,21 +106,98 @@ img {
   max-width: 300px;
 }
 
-/*
-  0 100% pointer
-.shine {
+.shinenew{
+  --card-aspect: 0.718;
+    --card-radius: 4.55% / 3.5%;
+    --card-edge: hsl(47, 100%, 78%);
+    --card-back: hsl(205, 100%, 25%);
+    --card-glow: hsl(175, 100%, 90%);
+    --sunpillar-1: hsl(2, 100%, 73%);
+    --sunpillar-2: hsl(53, 100%, 69%);
+    --sunpillar-3: hsl(93, 100%, 69%);
+    --sunpillar-4: hsl(176, 100%, 76%);
+    --sunpillar-5: hsl(228, 100%, 74%);
+    --sunpillar-6: hsl(283, 100%, 73%);
+    --sunpillar-clr-1: var(--sunpillar-1);
+    --sunpillar-clr-2: var(--sunpillar-2);
+    --sunpillar-clr-3: var(--sunpillar-3);
+    --sunpillar-clr-4: var(--sunpillar-4);
+    --sunpillar-clr-5: var(--sunpillar-5);
+    --sunpillar-clr-6: var(--sunpillar-6);
+    --space: 5%;
+    --angle: 133deg;
+    --imgsize: 50%;
+    --posy:v-bind('shineY');
+    --posx:v-bind('shineX');
+    --my:v-bind('shineY');
+    --mx:v-bind('shineX');
+    --pointer-x:v-bind('shineX');
+    --pointer-y:v-bind('shineY');
+    --hyp:0;
+    width: 100%;
 
+
+    --angle: 133deg;
+    --imgsize: 500px;
+    background-image: var(--grain), repeating-linear-gradient(0deg, var(--sunpillar-clr-1) calc(var(--space)* 1), var(--sunpillar-clr-2) calc(var(--space)* 2), var(--sunpillar-clr-3) calc(var(--space)* 3), var(--sunpillar-clr-4) calc(var(--space)* 4), var(--sunpillar-clr-5) calc(var(--space)* 5), var(--sunpillar-clr-6) calc(var(--space)* 6), var(--sunpillar-clr-1) calc(var(--space)* 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y), hsla(0, 0%, 0%, 0.1) 12%, hsla(0, 0%, 0%, 0.15) 20%, hsla(0, 0%, 0%, 0.25) 120%);
+    background-blend-mode: screen, hue, hard-light;
+    background-size: var(--imgsize) 100%, 200% 700%, 300% 100%, 200% 100%;
+    background-position: center, 0% var(--background-y), var(--background-x) var(--background-y), var(--background-x) var(--background-y);
+
+    opacity: 1;
+position: absolute;
+}
+.shine {
+ /* --space: 5%;
+    width: 330px;
+    aspect-ratio: .714;
+    border-radius: 4.55% / 3.5%;;
+    background-image: repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space)* 1), rgba(255, 237, 95, 1) calc(var(--space)* 2), rgba(168, 255, 95, 1) calc(var(--space)* 3), rgba(131, 255, 247, 1) calc(var(--space)* 4), rgba(120, 148, 255, 1) calc(var(--space)* 5), rgb(216, 117, 255) calc(var(--space)* 6), rgb(255, 119, 115) calc(var(--space)* 7));
+    background-size: 200% 700%;
+    background-position: 0% 50%;
+    
+    width: 330px;
+    aspect-ratio: .714;
+    background-image: url(https://res.cloudinary.com/simey/image/upload/Dev/PokemonCards/illusion.webp);
+    background-size: 50%;
+    background-position: center;
+
+    position: absolute;
+  opacity: 1;
+  */
+  --space: 5%;
+    --angle: 133deg;
+    --imgsize: 50%;
+    --posy:v-bind('shineY');
+    --posx:v-bind('shineX');
+    --my:v-bind('shineY');
+    --mx:v-bind('shineX');
+    --hyp:0;
+    width: 100%;
+    aspect-ratio: .714;
+    mix-blend-mode: color-dodge;
+    background-image: url(https://res.cloudinary.com/simey/image/upload/Dev/PokemonCards/illusion.webp), repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space)* 1), rgba(255, 237, 95, 1) calc(var(--space)* 2), rgba(168, 255, 95, 1) calc(var(--space)* 3), rgba(131, 255, 247, 1) calc(var(--space)* 4), rgba(120, 148, 255, 1) calc(var(--space)* 5), rgb(216, 117, 255) calc(var(--space)* 6), rgb(255, 119, 115) calc(var(--space)* 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 20%, rgba(0, 0, 0, .25) 120%);
+    background-blend-mode: exclusion, hue, hard-light, exclusion;
+    background-size: var(--imgsize), 200% 700%, 300%, 200%;
+    background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+    filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
+    -webkit-filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
+    display: grid;
+    grid-area: 1 / 1;
+    opacity: 1;
+position: absolute;
+
+/*
 width: 100%;
 height: 100%;
 position: absolute;
 background-image: radial-gradient(farthest-corner ellipse at calc(((v-bind('shineX')) * 0.5) + 25%) calc(((v-bind('shineY')) * 0.5) + 25%), hsl(0, 0%, 100%) 5%, hsla(300, 100%, 11%, 0.6) 40%, hsl(0, 0%, 22%) 120%);
 background-position: center center;
 background-size: 400% 500%;
-filter: brightness(calc(v-bind('x')*0.2) + 0.4)) contrast(.85) saturate(1.1);
-mix-blend-mode: hard-light;
+filter: brightness(calc((v-bind('fromCenter')* 0.3) + 0.5)) contrast(2.3) saturate(1);
+mix-blend-mode: hard-light;*/
 }
 
-*/
 /*
 .shadow {
   width: 100%;
