@@ -76,8 +76,8 @@ if (!window.matchMedia("(hover: hover)").matches) {
   const accelerometer = new Accelerometer({ frequency: 60 });
 
   accelerometer.addEventListener("reading", (e) => {
-    const x = event.layerX;
-    const y = event.layerY;
+    const x = accelerometer.x;
+    const y = accelerometer.y;
     console.log('x: ' + x + " y: " + y);
     const cardsizex = width;/*278;*/
     const cardsizey = height;/*376;*/
