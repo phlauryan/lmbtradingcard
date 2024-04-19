@@ -1,12 +1,13 @@
 <script setup>
 import { ref } from 'vue'
-defineProps({
-  visu: {
-    type: String,
+const props =defineProps({
+  carda: {
+    type: Object,
     required: true
   }
 })
-
+const visu = props.carda.visu;
+const holo = props.carda.type ==="holo";
 /* mouvement a l'affichage de la page*/
 const rotateY = ref('12deg');
 const rotateX = ref('14deg');
@@ -23,7 +24,6 @@ setTimeout(function () {
 
 const glareY = ref('0px');
 const glareX = ref('0px');
-
 let shineX = ref('0%')
 let shineY = ref('0%')
 let offsetX = ref(0)
@@ -94,7 +94,7 @@ window.addEventListener('scroll', function (event) {
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div class="rotate">
         <img class="card" :src="visu" />
-        <div class="shine"></div>
+        <div v-if="holo" class="shine"></div>
         <div class="card__glare"></div>
       </div>
     </div>
@@ -106,47 +106,26 @@ img {
   max-width: 300px;
 }
 
-.shinenew{
-  --card-aspect: 0.718;
-    --card-radius: 4.55% / 3.5%;
-    --card-edge: hsl(47, 100%, 78%);
-    --card-back: hsl(205, 100%, 25%);
-    --card-glow: hsl(175, 100%, 90%);
-    --sunpillar-1: hsl(2, 100%, 73%);
-    --sunpillar-2: hsl(53, 100%, 69%);
-    --sunpillar-3: hsl(93, 100%, 69%);
-    --sunpillar-4: hsl(176, 100%, 76%);
-    --sunpillar-5: hsl(228, 100%, 74%);
-    --sunpillar-6: hsl(283, 100%, 73%);
-    --sunpillar-clr-1: var(--sunpillar-1);
-    --sunpillar-clr-2: var(--sunpillar-2);
-    --sunpillar-clr-3: var(--sunpillar-3);
-    --sunpillar-clr-4: var(--sunpillar-4);
-    --sunpillar-clr-5: var(--sunpillar-5);
-    --sunpillar-clr-6: var(--sunpillar-6);
-    --space: 5%;
+.shiness{
+  --space: 5%;
     --angle: 133deg;
     --imgsize: 50%;
     --posy:v-bind('shineY');
     --posx:v-bind('shineX');
     --my:v-bind('shineY');
     --mx:v-bind('shineX');
-    --pointer-x:v-bind('shineX');
-    --pointer-y:v-bind('shineY');
     --hyp:0;
     width: 100%;
-
-
-    --angle: 133deg;
-    --imgsize: 500px;
-    background-image: var(--grain), repeating-linear-gradient(0deg, var(--sunpillar-clr-1) calc(var(--space)* 1), var(--sunpillar-clr-2) calc(var(--space)* 2), var(--sunpillar-clr-3) calc(var(--space)* 3), var(--sunpillar-clr-4) calc(var(--space)* 4), var(--sunpillar-clr-5) calc(var(--space)* 5), var(--sunpillar-clr-6) calc(var(--space)* 6), var(--sunpillar-clr-1) calc(var(--space)* 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y), hsla(0, 0%, 0%, 0.1) 12%, hsla(0, 0%, 0%, 0.15) 20%, hsla(0, 0%, 0%, 0.25) 120%);
-    background-blend-mode: screen, hue, hard-light;
-    background-size: var(--imgsize) 100%, 200% 700%, 300% 100%, 200% 100%;
-    background-position: center, 0% var(--background-y), var(--background-x) var(--background-y), var(--background-x) var(--background-y);
-
+    aspect-ratio: .714;
+    mix-blend-mode: color-dodge;
+    background-image: repeating-linear-gradient( var(--angle), hsla(283, 49%, 60%, 0.75) calc(var(--space)*1), hsla(2, 74%, 59%, 0.75) calc(var(--space)*2), hsla(53, 67%, 53%, 0.75) calc(var(--space)*3), hsla(93, 56%, 52%, 0.75) calc(var(--space)*4), hsla(176, 38%, 50%, 0.75) calc(var(--space)*5), hsla(228, 100%, 77%, 0.75) calc(var(--space)*6), hsla(283, 49%, 61%, 0.75) calc(var(--space)*7) );
+      background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+    filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
+    display: grid;
+    grid-area: 1 / 1;
     opacity: 1;
-position: absolute;
-}
+position: absolute;}
+
 .shine {
  /* --space: 5%;
     width: 330px;
@@ -176,7 +155,14 @@ position: absolute;
     width: 100%;
     aspect-ratio: .714;
     mix-blend-mode: color-dodge;
-    background-image: url(https://res.cloudinary.com/simey/image/upload/Dev/PokemonCards/illusion.webp), repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space)* 1), rgba(255, 237, 95, 1) calc(var(--space)* 2), rgba(168, 255, 95, 1) calc(var(--space)* 3), rgba(131, 255, 247, 1) calc(var(--space)* 4), rgba(120, 148, 255, 1) calc(var(--space)* 5), rgb(216, 117, 255) calc(var(--space)* 6), rgb(255, 119, 115) calc(var(--space)* 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 20%, rgba(0, 0, 0, .25) 120%);
+    /*background-image: url(./images/noir.png),
+    repeating-linear-gradient( var(--angle), hsla(283, 49%, 60%, 0.75) calc(var(--space)*1), hsla(2, 74%, 59%, 0.75) calc(var(--space)*2), hsla(53, 67%, 53%, 0.75) calc(var(--space)*3), hsla(93, 56%, 52%, 0.75) calc(var(--space)*4), hsla(176, 38%, 50%, 0.75) calc(var(--space)*5), hsla(228, 100%, 77%, 0.75) calc(var(--space)*6), hsla(283, 49%, 61%, 0.75) calc(var(--space)*7) ),
+          repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%),
+          radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 20%, rgba(0, 0, 0, .25) 120%);*/
+    background-image: url(./images/noir.png),
+     repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space)* 1),      rgba(255, 237, 95, 1) calc(var(--space)* 2),       rgba(168, 255, 95, 1) calc(var(--space)* 3),        rgba(131, 255, 247, 1) calc(var(--space)* 4),         rgba(120, 148, 255, 1) calc(var(--space)* 5),          rgb(216, 117, 255) calc(var(--space)* 6), rgb(255, 119, 115) calc(var(--space)* 7)),
+          repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%),
+          radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 20%, rgba(0, 0, 0, .25) 120%);
     background-blend-mode: exclusion, hue, hard-light, exclusion;
     background-size: var(--imgsize), 200% 700%, 300%, 200%;
     background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);

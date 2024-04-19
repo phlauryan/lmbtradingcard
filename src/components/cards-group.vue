@@ -16,8 +16,8 @@ defineProps({
 
   </h1>
   <div>
-    <div class="card-wrap" v-for="card in group.cards" :key="card">
-      <Card :visu="card.visu" />
+    <div class="card-wrap" v-for="cardb in group.cards" :key="cardb">
+      <Card :carda="cardb" />
     </div>
   </div>
 </template>
