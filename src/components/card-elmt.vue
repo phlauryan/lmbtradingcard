@@ -89,7 +89,7 @@ if (!window.matchMedia("(hover: hover)").matches) {
 
     transition.value = '';
     const x = eventData.rotationRate.beta;
-    const y = eventData.rotationRate.gama;
+    const y = eventData.rotationRate.gamma;
     console.log('x: ' + x + " y: " + y);
     const cardsizex = width;/*278;*/
     const cardsizey = height;/*376;*/
