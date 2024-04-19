@@ -73,11 +73,23 @@ function handleMouseMove(event) {
 }
 
 if (!window.matchMedia("(hover: hover)").matches) {
-  const accelerometer = new Accelerometer({ frequency: 60 });
+  window.addEventListener('devicemotion', (eventData) => {
+    console.log(`
+        Angle Alpha : ${eventData.rotationRate.alpha}
+        Angle Beta : ${eventData.rotationRate.beta}
+        Angle Gamma : ${eventData.rotationRate.gamma}
+        Accélération en X : ${eventData.accelerationIncludingGravity.x}
+        Accélération en Y : ${eventData.accelerationIncludingGravity.Y}
+        Accélération en Z : ${eventData.accelerationIncludingGravity.Z}
+    `);
 
-  accelerometer.addEventListener("reading", (e) => {
-    const x = accelerometer.x;
-    const y = accelerometer.y;
+
+    let width = 278
+    let height = 376
+
+    transition.value = '';
+    const x = eventData.rotationRate.alpha;
+    const y = eventData.rotationRate.beta;
     console.log('x: ' + x + " y: " + y);
     const cardsizex = width;/*278;*/
     const cardsizey = height;/*376;*/
@@ -95,13 +107,10 @@ if (!window.matchMedia("(hover: hover)").matches) {
 
     shineX.value = (100 / width) * x + '%';
     shineY.value = (100 / height) * y + '%';
-    console.log(`Acceleration along the X-axis ${accelerometer.x}`);
-    console.log(`Acceleration along the Y-axis ${accelerometer.y}`);
-    console.log(`Acceleration along the Z-axis ${accelerometer.z}`);
 
+    fromCenter = (Math.abs(width / 2 - x) / (width / 2) + Math.abs(height / 2 - y) / (height / 2)) / 2
 
-  });
-  accelerometer.start();
+}, false);
 
 }
 
