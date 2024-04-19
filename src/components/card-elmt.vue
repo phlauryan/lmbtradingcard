@@ -102,6 +102,7 @@ let shineY = ref('0%')
 let offsetX = ref(0)
 let offsetY = ref(0)
 let fromCenter = ref(0)
+
 //mouvement de la carte fonction de la sourie
 function handleMouseMove(event) {
   if (window.matchMedia("(hover: hover)").matches) {
@@ -133,11 +134,15 @@ function handleMouseMove(event) {
   }
 }
 
+let rientation = ref({})
 if (!window.matchMedia("(hover: hover)").matches) {
   window.addEventListener('deviceorientation', (eventData) => {
+    rientation={
+      alpha:eventData.alpha,
+      beta:eventData.beta,
+    gamma:eventData.gamma    }
 
-
-
+/*
     let width = 278
     let height = 376
 
@@ -163,7 +168,7 @@ if (!window.matchMedia("(hover: hover)").matches) {
     shineY.value = (100 / height) * y + '%';
 
     fromCenter = (Math.abs(width / 2 - x) / (width / 2) + Math.abs(height / 2 - y) / (height / 2)) / 2
-
+*/
 }, false);
 
 }
@@ -201,6 +206,9 @@ window.addEventListener('scroll', function (event) {
 
 <template>
   
+  {{rientation.alpha}}
+  {{rientation.beta}}
+  {{rientation.gamma}}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div class="rotate">
