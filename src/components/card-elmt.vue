@@ -130,46 +130,29 @@ function handleMouseMove(event) {
     shineX.value = (100 / width) * x + '%';
     shineY.value = (100 / height) * y + '%';
 
-    fromCenter = (Math.abs(width / 2 - x) / (width / 2) + Math.abs(height / 2 - y) / (height / 2)) / 2
+    fromCenter.value = (Math.abs(width / 2 - x) / (width / 2) + Math.abs(height / 2 - y) / (height / 2)) / 2
   }
 }
 
 let alpha = ref(0)
 let beta = ref(0)
 let gamma = ref(0)
+let alphaOri = ref(0)
+let betaOri = ref(0)
+let gammaOri = ref(0)
+let first= ref(true);
 if (!window.matchMedia("(hover: hover)").matches) {
   window.addEventListener('deviceorientation', (eventData) => {
-    alpha.value=eventData.alpha;
-    beta.value=  eventData.beta;
-    gamma.value= eventData.gamma    ;
+if(first.value){
+  alphaOri.value= eventData.alpha;
+  betaOri.value=  eventData.beta;
+  gammaOri.value= eventData.gamma;
+  first.value=false;
+}
+alpha.value= eventData.alpha-alphaOri.value;
+  beta.value=  eventData.beta-betaOri.value;
+  gamma.value= eventData.gamma-gammaOri.value;
 
-/*
-    let width = 278
-    let height = 376
-
-    transition.value = '';
-    const x = eventData.beta;
-    const y = eventData.gamma;
-    console.log('x: ' + x + " y: " + y);
-    const cardsizex = width;//278;
-    const cardsizey = height;//376;
-    const middleX = cardsizex / 2;
-    const middleY = cardsizey / 2;
-    offsetX.value = ((x - middleX) / middleX) * 15;
-    offsetY.value = ((y - middleY) / middleY) * 20;
-
-    // set rotation
-    rotateY.value = -1 * offsetX.value + 'deg';
-    rotateX.value = offsetY.value + 'deg';
-
-    glareX.value = x + 'px';
-    glareY.value = y + 'px';
-
-    shineX.value = (100 / width) * x + '%';
-    shineY.value = (100 / height) * y + '%';
-
-    fromCenter = (Math.abs(width / 2 - x) / (width / 2) + Math.abs(height / 2 - y) / (height / 2)) / 2
-*/
 }, false);
 
 }
