@@ -26,46 +26,7 @@ _.forEach(types, function (type) {
     cards: _.filter(cards, function (card) { return card.type === type; }).sort((a, b) => a.team.localeCompare(b.team))
   });
 });
-const getRawOrientation = function(e) {
-  if ( !e ) {
-    return { alpha: 0, beta: 0, gamma: 0 };
-  } else {
-    return { alpha: e.alpha, beta: e.beta, gamma: e.gamma };
-  }
-}
-function getOrientationObject (e) {
-  const orientation = getRawOrientation(e);
-  return {
-    absolute: orientation,
-    relative: { 
-      alpha: orientation.alpha - baseOrientation.alpha, 
-      beta: orientation.beta - baseOrientation.beta, 
-      gamma: orientation.gamma - baseOrientation.gamma, 
-    }
-  }
-}
-
-let firstReading = true;
-let baseOrientation = getRawOrientation();
-let ori=ref(getOrientationObject())
-console.log('ori app ',ori)
-
-
-
-
-window.addEventListener("deviceorientation", handleOrientation, true);
-
-
-
- function handleOrientation (e) {
-
-    if ( firstReading ) {
-      firstReading = false;
-      baseOrientation = getRawOrientation(e);
-    }
-
-    ori = getOrientationObject(e);
-  };
+let ori=ref('')
 
   
 

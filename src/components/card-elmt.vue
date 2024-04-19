@@ -18,7 +18,65 @@ window.requestAnimationFrame(maFrame)
 window.requestAnimationFrame(maFrame)
 */
 
-console.log('ori card ',props.ori)
+
+
+
+//test
+
+
+
+const getRawOrientation = function(e) {
+  if ( !e ) {
+    return { alpha: 0, beta: 0, gamma: 0 };
+  } else {
+    return { alpha: e.alpha, beta: e.beta, gamma: e.gamma };
+  }
+};
+
+let baseOrientation = getRawOrientation();
+
+function getOrientationObject (e) {
+  const orientation = getRawOrientation(e);
+  return {
+    absolute: orientation,
+    relative: { 
+      alpha: orientation.alpha - baseOrientation.alpha, 
+      beta: orientation.beta - baseOrientation.beta, 
+      gamma: orientation.gamma - baseOrientation.gamma, 
+    }
+  }
+}
+let rip=ref(getOrientationObject());
+let firstReading = true;
+
+
+
+
+window.addEventListener("deviceorientation", handleOrientation, true);
+
+
+
+ function handleOrientation (e) {
+
+    if ( firstReading ) {
+      firstReading = false;
+      baseOrientation = getRawOrientation(e);
+    }
+
+    rip = getOrientationObject(e);
+  };
+
+
+//fintest
+
+
+
+
+
+
+
+
+
 
 
 
@@ -75,7 +133,7 @@ function handleMouseMove(event) {
     fromCenter = (Math.abs(width / 2 - x) / (width / 2) + Math.abs(height / 2 - y) / (height / 2)) / 2
   }
 }
-
+/*
 if (!window.matchMedia("(hover: hover)").matches) {
   window.addEventListener('devicemotion', (eventData) => {
     console.log(`
@@ -95,8 +153,8 @@ if (!window.matchMedia("(hover: hover)").matches) {
     const x = eventData.rotationRate.beta;
     const y = eventData.rotationRate.gamma;
     console.log('x: ' + x + " y: " + y);
-    const cardsizex = width;/*278;*/
-    const cardsizey = height;/*376;*/
+    const cardsizex = width;/*278;
+    const cardsizey = height;/*376;
     const middleX = cardsizex / 2;
     const middleY = cardsizey / 2;
     offsetX.value = ((x - middleX) / middleX) * 15;
@@ -116,7 +174,7 @@ if (!window.matchMedia("(hover: hover)").matches) {
 
 }, false);
 
-}
+}*/
 
 //mouvement quand je sort de la carte
 function hoveroire() {
@@ -151,9 +209,9 @@ window.addEventListener('scroll', function (event) {
 
 <template>
   
-  {{props.ori.absolute.alpha}}
-  {{props.ori.absolute.beta}}
-  {{props.ori.absolute.gamma}}
+  {{rip.absolute.alpha}}
+  {{rip.absolute.beta}}
+  {{rip.absolute.gamma}}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div class="rotate">
