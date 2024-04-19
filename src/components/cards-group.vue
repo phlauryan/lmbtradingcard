@@ -5,10 +5,6 @@ const props = defineProps({
   group: {
     type: Object,
     required: true
-  },
-  ori:{
-    type: Object,
-    required: true
   }
 })
 
@@ -21,7 +17,7 @@ console.log('ori group ',props.ori)
   </h1>
   <div>
     <div class="card-wrap" v-for="cardb in group.cards" :key="cardb">
-      <Card :carda="cardb" :ori="ori"/>
+      <Card :carda="cardb"/>
     </div>
   </div>
 </template>

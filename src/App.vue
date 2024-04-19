@@ -26,7 +26,6 @@ _.forEach(types, function (type) {
     cards: _.filter(cards, function (card) { return card.type === type; }).sort((a, b) => a.team.localeCompare(b.team))
   });
 });
-let ori=ref('')
 
   
 
@@ -40,7 +39,7 @@ let ori=ref('')
   </header>
   <main>
     <div class="group" v-for="groupbyteam in groupsbyteam">
-      <cardsgroup :group="groupbyteam" :ori="ori"/>
+      <cardsgroup :group="groupbyteam"/>
     </div>
   </main>
 </template>
