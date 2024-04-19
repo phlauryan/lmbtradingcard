@@ -4,9 +4,12 @@ const props = defineProps({
   carda: {
     type: Object,
     required: true
+  },
+  ori:{
+    type: Object,
+    required: true
   }
 })
-
 /*
 function maFrame() {
 code frame
@@ -146,6 +149,8 @@ window.addEventListener('scroll', function (event) {
 </script>
 
 <template>
+  
+  {{ori.absolute}}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div class="rotate">

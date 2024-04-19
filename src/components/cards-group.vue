@@ -5,6 +5,10 @@ defineProps({
   group: {
     type: Object,
     required: true
+  },
+  ori:{
+    type: Object,
+    required: true
   }
 })
 
@@ -13,11 +17,11 @@ defineProps({
 <template>
   <h1>
     {{ group.groupname }}
-
+    {{ori.absolute}}
   </h1>
   <div>
     <div class="card-wrap" v-for="cardb in group.cards" :key="cardb">
-      <Card :carda="cardb" />
+      <Card :carda="cardb" :ori="ori"/>
     </div>
   </div>
 </template>
