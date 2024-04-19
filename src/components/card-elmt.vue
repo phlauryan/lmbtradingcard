@@ -201,9 +201,6 @@ window.addEventListener('scroll', function (event) {
 
 <template>
   
-  {{rip.absolute.alpha}}
-  {{rip.absolute.beta}}
-  {{rip.absolute.gamma}}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div class="rotate">
