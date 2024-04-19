@@ -18,6 +18,7 @@ window.requestAnimationFrame(maFrame)
 window.requestAnimationFrame(maFrame)
 */
 
+console.log('ori card ',props.ori)
 
 
 
@@ -150,7 +151,9 @@ window.addEventListener('scroll', function (event) {
 
 <template>
   
-  {{ori.absolute}}
+  {{props.ori.absolute.alpha}}
+  {{props.ori.absolute.beta}}
+  {{props.ori.absolute.gamma}}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div class="rotate">

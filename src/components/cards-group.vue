@@ -1,7 +1,7 @@
 <script setup>
 import { reactive, computed } from 'vue'
 import Card from './card-elmt.vue'
-defineProps({
+const props = defineProps({
   group: {
     type: Object,
     required: true
@@ -12,12 +12,12 @@ defineProps({
   }
 })
 
+console.log('ori group ',props.ori)
 </script>
 
 <template>
   <h1>
     {{ group.groupname }}
-    {{ori.absolute}}
   </h1>
   <div>
     <div class="card-wrap" v-for="cardb in group.cards" :key="cardb">

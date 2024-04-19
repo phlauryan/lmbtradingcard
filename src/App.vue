@@ -33,12 +33,6 @@ const getRawOrientation = function(e) {
     return { alpha: e.alpha, beta: e.beta, gamma: e.gamma };
   }
 }
-let firstReading = true;
-let baseOrientation = getRawOrientation();
-let ori=ref(baseOrientation)
-
-
-
 function getOrientationObject (e) {
   const orientation = getRawOrientation(e);
   return {
@@ -50,6 +44,13 @@ function getOrientationObject (e) {
     }
   }
 }
+
+let firstReading = true;
+let baseOrientation = getRawOrientation();
+let ori=ref(getOrientationObject())
+console.log('ori app ',ori)
+
+
 
 
 window.addEventListener("deviceorientation", handleOrientation, true);
