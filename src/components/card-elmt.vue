@@ -134,13 +134,14 @@ function handleMouseMove(event) {
   }
 }
 
-let rientation = ref({})
+let rientation = ref({alpha:eventData.alpha,
+      beta:eventData.beta,
+    gamma:eventData.gamma})
 if (!window.matchMedia("(hover: hover)").matches) {
   window.addEventListener('deviceorientation', (eventData) => {
-    rientation={
-      alpha:eventData.alpha,
-      beta:eventData.beta,
-    gamma:eventData.gamma    }
+    rientation.alpha=eventData.alpha;
+    rientation.beta=  eventData.beta;
+    rientation.gamma= eventData.gamma    ;
 
 /*
     let width = 278
@@ -205,10 +206,10 @@ window.addEventListener('scroll', function (event) {
 </script>
 
 <template>
-  
+  tt
   {{rientation.alpha}}
   {{rientation.beta}}
-  {{rientation.gamma}}
+  {{rientation.gamma}}tt
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div class="rotate">
