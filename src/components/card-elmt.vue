@@ -134,9 +134,9 @@ function handleMouseMove(event) {
   }
 }
 
-let rientation = ref({alpha:eventData.alpha,
-      beta:eventData.beta,
-    gamma:eventData.gamma})
+let rientation = ref({alpha:0,
+      beta:0,
+    gamma:0})
 if (!window.matchMedia("(hover: hover)").matches) {
   window.addEventListener('deviceorientation', (eventData) => {
     rientation.alpha=eventData.alpha;
