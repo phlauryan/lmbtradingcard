@@ -24,7 +24,7 @@ window.requestAnimationFrame(maFrame)
 //test
 
 
-
+/*
 const getRawOrientation = function(e) {
   if ( !e ) {
     return { alpha: 0, beta: 0, gamma: 0 };
@@ -52,8 +52,7 @@ let firstReading = true;
 
 
 
-window.addEventListener("deviceorientation", handleOrientation, true);
-
+window.addEventListener("deviceorientation", handleOrientation, false);
 
 
  function handleOrientation (e) {
@@ -66,7 +65,7 @@ window.addEventListener("deviceorientation", handleOrientation, true);
     rip = getOrientationObject(e);
   };
 
-
+*/
 //fintest
 
 
@@ -133,28 +132,21 @@ function handleMouseMove(event) {
     fromCenter = (Math.abs(width / 2 - x) / (width / 2) + Math.abs(height / 2 - y) / (height / 2)) / 2
   }
 }
-/*
+
 if (!window.matchMedia("(hover: hover)").matches) {
-  window.addEventListener('devicemotion', (eventData) => {
-    console.log(`
-        Angle Alpha : ${eventData.rotationRate.alpha}
-        Angle Beta : ${eventData.rotationRate.beta}
-        Angle Gamma : ${eventData.rotationRate.gamma}
-        Accélération en X : ${eventData.accelerationIncludingGravity.x}
-        Accélération en Y : ${eventData.accelerationIncludingGravity.Y}
-        Accélération en Z : ${eventData.accelerationIncludingGravity.Z}
-    `);
+  window.addEventListener('deviceorientation', (eventData) => {
+
 
 
     let width = 278
     let height = 376
 
     transition.value = '';
-    const x = eventData.rotationRate.beta;
-    const y = eventData.rotationRate.gamma;
+    const x = eventData.beta;
+    const y = eventData.gamma;
     console.log('x: ' + x + " y: " + y);
-    const cardsizex = width;/*278;
-    const cardsizey = height;/*376;
+    const cardsizex = width;//278;
+    const cardsizey = height;//376;
     const middleX = cardsizex / 2;
     const middleY = cardsizey / 2;
     offsetX.value = ((x - middleX) / middleX) * 15;
@@ -174,7 +166,7 @@ if (!window.matchMedia("(hover: hover)").matches) {
 
 }, false);
 
-}*/
+}
 
 //mouvement quand je sort de la carte
 function hoveroire() {
