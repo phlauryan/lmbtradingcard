@@ -1,13 +1,25 @@
 <script setup>
 import { ref } from 'vue'
-const props =defineProps({
+const props = defineProps({
   carda: {
     type: Object,
     required: true
   }
 })
+
+/*
+function maFrame() {
+code frame
+window.requestAnimationFrame(maFrame)
+};
+window.requestAnimationFrame(maFrame)
+*/
+
+
+
+
 const visu = props.carda.visu;
-const holo = props.carda.type ==="holo";
+const holo = props.carda.type === "holo";
 /* mouvement a l'affichage de la page*/
 const rotateY = ref('12deg');
 const rotateX = ref('14deg');
@@ -31,32 +43,67 @@ let offsetY = ref(0)
 let fromCenter = ref(0)
 //mouvement de la carte fonction de la sourie
 function handleMouseMove(event) {
-  let width =event.target.clientWidth
-  let height =event.target.clientHeight
-  
-  transition.value = '';
-  const x = event.layerX;
-  const y = event.layerY;
-  console.log ('x: '+x+" y: "+y);
-  const cardsizex = width;/*278;*/
-  const cardsizey = height;/*376;*/
-  const middleX = cardsizex / 2;
-  const middleY = cardsizey / 2;
-  offsetX.value = ((x - middleX) / middleX) * 15;
-  offsetY.value = ((y - middleY) / middleY) * 20;
+  if (window.matchMedia("(hover: hover)").matches) {
+    let width = event.target.clientWidth
+    let height = event.target.clientHeight
 
-  // set rotation
-  rotateY.value = -1 * offsetX.value + 'deg';
-  rotateX.value = offsetY.value + 'deg';
+    transition.value = '';
+    const x = event.layerX;
+    const y = event.layerY;
+    console.log('x: ' + x + " y: " + y);
+    const cardsizex = width;/*278;*/
+    const cardsizey = height;/*376;*/
+    const middleX = cardsizex / 2;
+    const middleY = cardsizey / 2;
+    offsetX.value = ((x - middleX) / middleX) * 15;
+    offsetY.value = ((y - middleY) / middleY) * 20;
 
-  glareX.value = x + 'px';
-  glareY.value = y + 'px';
+    // set rotation
+    rotateY.value = -1 * offsetX.value + 'deg';
+    rotateX.value = offsetY.value + 'deg';
 
-  shineX.value = (100/width)*x + '%';
-  shineY.value = (100/height)*y + '%';
+    glareX.value = x + 'px';
+    glareY.value = y + 'px';
 
-  fromCenter=  (Math.abs(width/2 -x) /(width/2) +Math.abs(height/2 -y) /(height/2))/2
-};
+    shineX.value = (100 / width) * x + '%';
+    shineY.value = (100 / height) * y + '%';
+
+    fromCenter = (Math.abs(width / 2 - x) / (width / 2) + Math.abs(height / 2 - y) / (height / 2)) / 2
+  }
+}
+
+if (!window.matchMedia("(hover: hover)").matches) {
+  const accelerometer = new Accelerometer({ frequency: 60 });
+
+  accelerometer.addEventListener("reading", (e) => {
+    const x = event.layerX;
+    const y = event.layerY;
+    console.log('x: ' + x + " y: " + y);
+    const cardsizex = width;/*278;*/
+    const cardsizey = height;/*376;*/
+    const middleX = cardsizex / 2;
+    const middleY = cardsizey / 2;
+    offsetX.value = ((x - middleX) / middleX) * 15;
+    offsetY.value = ((y - middleY) / middleY) * 20;
+
+    // set rotation
+    rotateY.value = -1 * offsetX.value + 'deg';
+    rotateX.value = offsetY.value + 'deg';
+
+    glareX.value = x + 'px';
+    glareY.value = y + 'px';
+
+    shineX.value = (100 / width) * x + '%';
+    shineY.value = (100 / height) * y + '%';
+    console.log(`Acceleration along the X-axis ${accelerometer.x}`);
+    console.log(`Acceleration along the Y-axis ${accelerometer.y}`);
+    console.log(`Acceleration along the Z-axis ${accelerometer.z}`);
+
+
+  });
+  accelerometer.start();
+
+}
 
 //mouvement quand je sort de la carte
 function hoveroire() {
@@ -106,28 +153,29 @@ img {
   max-width: 300px;
 }
 
-.shiness{
+.shiness {
   --space: 5%;
-    --angle: 133deg;
-    --imgsize: 50%;
-    --posy:v-bind('shineY');
-    --posx:v-bind('shineX');
-    --my:v-bind('shineY');
-    --mx:v-bind('shineX');
-    --hyp:0;
-    width: 100%;
-    aspect-ratio: .714;
-    mix-blend-mode: color-dodge;
-    background-image: repeating-linear-gradient( var(--angle), hsla(283, 49%, 60%, 0.75) calc(var(--space)*1), hsla(2, 74%, 59%, 0.75) calc(var(--space)*2), hsla(53, 67%, 53%, 0.75) calc(var(--space)*3), hsla(93, 56%, 52%, 0.75) calc(var(--space)*4), hsla(176, 38%, 50%, 0.75) calc(var(--space)*5), hsla(228, 100%, 77%, 0.75) calc(var(--space)*6), hsla(283, 49%, 61%, 0.75) calc(var(--space)*7) );
-      background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
-    filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
-    display: grid;
-    grid-area: 1 / 1;
-    opacity: 1;
-position: absolute;}
+  --angle: 133deg;
+  --imgsize: 50%;
+  --posy: v-bind('shineY');
+  --posx: v-bind('shineX');
+  --my: v-bind('shineY');
+  --mx: v-bind('shineX');
+  --hyp: 0;
+  width: 100%;
+  aspect-ratio: .714;
+  mix-blend-mode: color-dodge;
+  background-image: repeating-linear-gradient(var(--angle), hsla(283, 49%, 60%, 0.75) calc(var(--space)*1), hsla(2, 74%, 59%, 0.75) calc(var(--space)*2), hsla(53, 67%, 53%, 0.75) calc(var(--space)*3), hsla(93, 56%, 52%, 0.75) calc(var(--space)*4), hsla(176, 38%, 50%, 0.75) calc(var(--space)*5), hsla(228, 100%, 77%, 0.75) calc(var(--space)*6), hsla(283, 49%, 61%, 0.75) calc(var(--space)*7));
+  background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+  filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
+  display: grid;
+  grid-area: 1 / 1;
+  opacity: 1;
+  position: absolute;
+}
 
 .shine {
- /* --space: 5%;
+  /* --space: 5%;
     width: 330px;
     aspect-ratio: .714;
     border-radius: 4.55% / 3.5%;;
@@ -145,35 +193,35 @@ position: absolute;}
   opacity: 1;
   */
   --space: 5%;
-    --angle: 133deg;
-    --imgsize: 50%;
-    --posy:v-bind('shineY');
-    --posx:v-bind('shineX');
-    --my:v-bind('shineY');
-    --mx:v-bind('shineX');
-    --hyp:0;
-    width: 100%;
-    aspect-ratio: .714;
-    mix-blend-mode: color-dodge;
-    /*background-image: url(./images/noir.png),
+  --angle: 133deg;
+  --imgsize: 50%;
+  --posy: v-bind('shineY');
+  --posx: v-bind('shineX');
+  --my: v-bind('shineY');
+  --mx: v-bind('shineX');
+  --hyp: 0;
+  width: 100%;
+  aspect-ratio: .714;
+  mix-blend-mode: color-dodge;
+  /*background-image: url(./images/noir.png),
     repeating-linear-gradient( var(--angle), hsla(283, 49%, 60%, 0.75) calc(var(--space)*1), hsla(2, 74%, 59%, 0.75) calc(var(--space)*2), hsla(53, 67%, 53%, 0.75) calc(var(--space)*3), hsla(93, 56%, 52%, 0.75) calc(var(--space)*4), hsla(176, 38%, 50%, 0.75) calc(var(--space)*5), hsla(228, 100%, 77%, 0.75) calc(var(--space)*6), hsla(283, 49%, 61%, 0.75) calc(var(--space)*7) ),
           repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%),
           radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 20%, rgba(0, 0, 0, .25) 120%);*/
-    background-image: url(./images/noir.png),
-     repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space)* 1),      rgba(255, 237, 95, 1) calc(var(--space)* 2),       rgba(168, 255, 95, 1) calc(var(--space)* 3),        rgba(131, 255, 247, 1) calc(var(--space)* 4),         rgba(120, 148, 255, 1) calc(var(--space)* 5),          rgb(216, 117, 255) calc(var(--space)* 6), rgb(255, 119, 115) calc(var(--space)* 7)),
-          repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%),
-          radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 20%, rgba(0, 0, 0, .25) 120%);
-    background-blend-mode: exclusion, hue, hard-light, exclusion;
-    background-size: var(--imgsize), 200% 700%, 300%, 200%;
-    background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
-    filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
-    -webkit-filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
-    display: grid;
-    grid-area: 1 / 1;
-    opacity: 1;
-position: absolute;
+  background-image: url(./images/noir.png),
+    repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space)* 1), rgba(255, 237, 95, 1) calc(var(--space)* 2), rgba(168, 255, 95, 1) calc(var(--space)* 3), rgba(131, 255, 247, 1) calc(var(--space)* 4), rgba(120, 148, 255, 1) calc(var(--space)* 5), rgb(216, 117, 255) calc(var(--space)* 6), rgb(255, 119, 115) calc(var(--space)* 7)),
+    repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%),
+    radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 20%, rgba(0, 0, 0, .25) 120%);
+  background-blend-mode: exclusion, hue, hard-light, exclusion;
+  background-size: var(--imgsize), 200% 700%, 300%, 200%;
+  background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+  filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
+  -webkit-filter: brightness(calc((var(--hyp)* 0.3) + 0.5)) contrast(2) saturate(1.5);
+  display: grid;
+  grid-area: 1 / 1;
+  opacity: 1;
+  position: absolute;
 
-/*
+  /*
 width: 100%;
 height: 100%;
 position: absolute;

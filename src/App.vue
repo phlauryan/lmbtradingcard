@@ -40,6 +40,10 @@ _.forEach(types, function (type) {
 </template>
 
 <style>
+* {
+  padding: 0;
+  margin: 0;
+}
 @font-face {
   font-family: 'MaPolice';
   src: url("./font/olympiccarrierlaserital.ttf") format('truetype');
@@ -58,13 +62,48 @@ h1 {
 #app {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
 }
 
 group {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  #app {
+    justify-content: center;
+  }
+
+  group {
+    justify-content: center;
+  }
+
+  main {
+    h1{
+      text-align: center;
+    }
+    div {
+    justify-content: center;
+    }
+  }
+}
+@media not (max-width: 500px) {
+  #app {
+    justify-content: left;
+  }
+
+  group {
+    justify-content: left;
+  }
+
+  main {
+    h1{
+      text-align: left;
+    }
+    div {
+    justify-content: left;
+    }
+  }
 }
 
 body {
@@ -82,7 +121,6 @@ header {
 main {
   div {
     display: flex;
-  justify-content: center;
     flex-flow: row wrap;
   }
 
