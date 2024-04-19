@@ -153,6 +153,8 @@ alpha.value= eventData.alpha-alphaOri.value;
   beta.value=  eventData.beta-betaOri.value;
   gamma.value= eventData.gamma-gammaOri.value;
 
+  rotateX.value = beta.value + 'deg';
+  rotateY.value = gamma.value + 'deg';
 }, false);
 
 }
