@@ -27,6 +27,17 @@ _.forEach(types, function (type) {
   });
 });
 
+let groupstoshow=ref(groupsbyteam);
+
+function byteam(){
+  console.log("team");
+  groupstoshow.value=groupsbyteam;
+}
+
+function bytype(){
+  console.log("type");
+  groupstoshow.value=groupbytype;
+}
 </script>
 
 <template>
@@ -34,11 +45,12 @@ _.forEach(types, function (type) {
     <img class="logo" src="./images/logo.png" />
   </header>
   <subheader>
-    <img class="logo" src="./images/logo.png" />
+	<div class="button" @click="byteam">Equipe</div>
+	<div class="button" @click="bytype">Type de carte</div>
   </subheader>
   <main>
-    <div class="group" v-for="groupbyteam in groupsbyteam">
-      <cardsgroup :group="groupbyteam"/>
+    <div class="group" v-for="grouptoshow in groupstoshow">
+      <cardsgroup :group="grouptoshow"/>
     </div>
   </main>
 </template>
@@ -55,6 +67,16 @@ _.forEach(types, function (type) {
 
 .logo {
   padding: 12px;
+}
+
+.button {    
+  text-align: center;
+  font-family: 'MaPolice', sans-serif;
+  text-transform: uppercase;
+  background-color: rgb(51, 53, 56);;
+  font-size: 50px;
+  width: 100%;
+  color: white;
 }
 
 h1 {
@@ -121,6 +143,7 @@ header {
   line-height: 1.5;
   background-color: rgb(36, 36, 36);
 }
+
 subheader {
   display: flex;
   justify-content: center;
