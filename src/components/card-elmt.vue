@@ -76,7 +76,7 @@ window.addEventListener("deviceorientation", handleOrientation, false);
     if(gamma > anglesdevicemax){
       gamma=anglesdevicemax;
     }
-    const xcalc= rotatecoef.value={x:(beta/anglesdevicemax),y:(gamma/anglesdevicemax) };
+    const xcalc= rotatecoef.value={x:(gamma/anglesdevicemax),y:(beta/anglesdevicemax) };
 
   };
 
