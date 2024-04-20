@@ -75,6 +75,8 @@ function bytype(){
 h1 {
   font-family: 'MaPolice', sans-serif;
   text-transform: uppercase;
+  padding-top: 22px;
+  padding-left: 22px;
 }
 
 #app {
@@ -153,6 +155,8 @@ header {
   
 
 .subheader {
+  
+  padding: 10px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
