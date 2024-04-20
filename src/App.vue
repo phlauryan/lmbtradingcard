@@ -27,16 +27,15 @@ _.forEach(types, function (type) {
   });
 });
 
-  
-
-
-
 </script>
 
 <template>
   <header>
     <img class="logo" src="./images/logo.png" />
   </header>
+  <subheader>
+    <img class="logo" src="./images/logo.png" />
+  </subheader>
   <main>
     <div class="group" v-for="groupbyteam in groupsbyteam">
       <cardsgroup :group="groupbyteam"/>
@@ -121,6 +120,13 @@ header {
   width: 100%;
   line-height: 1.5;
   background-color: rgb(36, 36, 36);
+}
+subheader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  line-height: 1.5;
+  background-color: rgb(51, 53, 56);
 }
 
 main {
