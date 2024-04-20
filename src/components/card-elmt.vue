@@ -22,6 +22,7 @@ tweenrotateXCoef3.start()
 
 
 //test
+const anglesdevicemax=20;
 const getRawOrientation = function(e) {
   if ( !e ) {
     return { alpha: 0, beta: 0, gamma: 0 };
@@ -67,10 +68,15 @@ window.addEventListener("deviceorientation", handleOrientation, false);
     }
 
     rip = getOrientationObject(e);
-    
-
-
-    rotatecoef.value={x:rip.relative.beta,y: rip.relative.gamma}
+    const beta =rip.relative.beta;
+    const gamma = rip.relative.gamma;
+    if(beta > anglesdevicemax){
+      beta=anglesdevicemax;
+    }
+    if(gamma > anglesdevicemax){
+      gamma=anglesdevicemax;
+    }
+    const xcalc= rotatecoef.value={x:(beta/anglesdevicemax),y:(gamma/anglesdevicemax) };
 
   };
 
@@ -108,6 +114,7 @@ const height = 470;
 //angles max sur les deux axe que peuvent prendre les carte (-1 1) 
 const decalageMaxXDeg =15;
 const decalageMaxYDeg =20;
+
 //rotateDeg -decalageMaxDeg to decalageMaxYDeg
 const rotateXDeg = computed(() => {
   return (rotatecoef.value.y * decalageMaxYDeg)+'deg';
@@ -145,16 +152,18 @@ function handleMouseMove(event) {
 
 //mouvement quand je sort de la carte
 function hoveroire() {
+  if (window.matchMedia("(hover: hover)").matches) {
  tweenrotateXCoef.stop(); 
  tweenrotateXCoef = new TWEEN.Tween(rotatecoef.value)
  tweenrotateXCoef.to({x:0,y:0}, 1000).easing(TWEEN.Easing.Bounce.Out)
  tweenrotateXCoef.startFromCurrentValues();
+  }
 };
 
 //mouvement lors du scroll
 const startY = ref(0);
 var scroll;
-
+if (window.matchMedia("(hover: hover)").matches) {
 window.addEventListener('scroll', function (event) {
   let direction = 1;
   var scrollY = window.scrollY
@@ -179,7 +188,7 @@ window.addEventListener('scroll', function (event) {
     tweenrotateXCoef.startFromCurrentValues();
   }, 300);
 }, false);
-
+}
 </script>
 
 <template>
