@@ -155,13 +155,10 @@ header {
   
 
 .subheader {
-  
-  padding: 10px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   width: 100%;
-  line-height: 1.5;
   background-color: rgb(51, 53, 56);
   div{
     
