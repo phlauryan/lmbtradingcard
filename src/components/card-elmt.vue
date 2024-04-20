@@ -19,9 +19,9 @@ var tweenrotateXCoef2 = new TWEEN.Tween(rotatecoef.value)
 tweenrotateXCoef3.to({x:0.6,y:0.9}, 500).easing(TWEEN.Easing.Cubic.Out).chain(tweenrotateXCoef2.to({x:0,y:0}, 1000).easing(TWEEN.Easing.Bounce.Out))
 tweenrotateXCoef3.start()
 
+//utilisation de l'accelerometre
+if (!window.matchMedia("(hover: hover)").matches) {
 
-
-//test
 const anglesdevicemax=20;
 const getRawOrientation = function(e) {
   if ( !e ) {
@@ -32,7 +32,6 @@ const getRawOrientation = function(e) {
 };
 
 let baseOrientation = getRawOrientation();
-
 function getOrientationObject (e) {
   const orientation = getRawOrientation(e);
   return {
@@ -54,19 +53,14 @@ let rip=ref({
 });
 let firstReading = true;
 
-
-
-
 window.addEventListener("deviceorientation", handleOrientation, false);
 
-
- function handleOrientation (e) {
-
-    if ( firstReading ) {
+function handleOrientation (e) {
+  if ( firstReading ) {
       firstReading = false;
       baseOrientation = getRawOrientation(e);
     }
-
+    
     rip = getOrientationObject(e);
     const beta =rip.relative.beta;
     const gamma = rip.relative.gamma;
@@ -77,11 +71,8 @@ window.addEventListener("deviceorientation", handleOrientation, false);
       gamma=anglesdevicemax;
     }
     const xcalc= rotatecoef.value={x:(gamma/anglesdevicemax),y:(beta/anglesdevicemax) };
-
   };
-
-
-//fintest
+}
 
 
 
@@ -192,7 +183,6 @@ window.addEventListener('scroll', function (event) {
 </script>
 
 <template>
-  {{rip.relative.beta}}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div ref="divrotate" class="rotate">
