@@ -19,6 +19,68 @@ var tweenrotateXCoef2 = new TWEEN.Tween(rotatecoef.value)
 tweenrotateXCoef3.to({x:0.6,y:0.9}, 500).easing(TWEEN.Easing.Cubic.Out).chain(tweenrotateXCoef2.to({x:0,y:0}, 1000).easing(TWEEN.Easing.Bounce.Out))
 tweenrotateXCoef3.start()
 
+
+
+//test
+const getRawOrientation = function(e) {
+  if ( !e ) {
+    return { alpha: 0, beta: 0, gamma: 0 };
+  } else {
+    return { alpha: e.alpha, beta: e.beta, gamma: e.gamma };
+  }
+};
+
+let baseOrientation = getRawOrientation();
+
+function getOrientationObject (e) {
+  const orientation = getRawOrientation(e);
+  return {
+    absolute: orientation,
+    relative: { 
+      alpha: orientation.alpha - baseOrientation.alpha, 
+      beta: orientation.beta - baseOrientation.beta, 
+      gamma: orientation.gamma - baseOrientation.gamma
+    }
+  }
+}
+let rip=ref({
+  absolute: getRawOrientation(),
+    relative: { 
+      alpha: 0, 
+      beta: 0, 
+      gamma: 0
+    }
+});
+let firstReading = true;
+
+
+
+
+window.addEventListener("deviceorientation", handleOrientation, false);
+
+
+ function handleOrientation (e) {
+
+    if ( firstReading ) {
+      firstReading = false;
+      baseOrientation = getRawOrientation(e);
+    }
+
+    rip = getOrientationObject(e);
+    
+
+
+    rotatecoef.value={x:rip.relative.beta,y: rip.relative.gamma}
+
+  };
+
+
+//fintest
+
+
+
+
+
 function maFrame(time) {
   /*console.log('xxxxxxxx : '+rotatecoef.value.x);
   console.log('yyyyyyyyy : '+rotatecoef.value.y);
@@ -106,10 +168,7 @@ window.addEventListener('scroll', function (event) {
   window.clearTimeout(scroll);
 
   tweenrotateXCoef.stop();
-  //tweenrotateXCoef = new TWEEN.Tween(rotatecoef.value)
   tweenrotateXCoef2.stop();
-  //tweenrotateXCoef.to({x:0,y: (0.5 * direction)}, 50).easing(TWEEN.Easing.Bounce.Out)
-  //tweenrotateXCoef.startFromCurrentValues();
   rotatecoef.value= {x:0,y:(0.5*direction)};
 
   scroll = setTimeout(function () {
@@ -124,6 +183,7 @@ window.addEventListener('scroll', function (event) {
 </script>
 
 <template>
+  {{rip.relative.beta}}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div ref="divrotate" class="rotate">
