@@ -44,10 +44,13 @@ function bytype(){
   <header>
     <img class="logo" src="./images/logo.png" />
   </header>
-  <subheader>
-	<div class="button" @click="byteam">Equipe</div>
-	<div class="button" @click="bytype">Type de carte</div>
-  </subheader>
+  <div class="subheader">
+    <div>Grouper par</div>
+    <div>
+      <div class="button" @click="byteam">Equipes</div>
+      <div class="button" @click="bytype">Cartes</div>
+    </div>
+  </div>
   <main>
     <div class="group" v-for="grouptoshow in groupstoshow">
       <cardsgroup :group="grouptoshow"/>
@@ -69,19 +72,9 @@ function bytype(){
   padding: 12px;
 }
 
-.button {    
-  text-align: center;
-  font-family: 'MaPolice', sans-serif;
-  text-transform: uppercase;
-  background-color: rgb(51, 53, 56);
-  width: 100%;
-  color: white;
-}
-
 h1 {
   font-family: 'MaPolice', sans-serif;
   text-transform: uppercase;
-  font-size: 60px;
 }
 
 #app {
@@ -96,10 +89,12 @@ group {
 
 @media (max-width: 500px) {
   
-  .button{
+  .subheader div{
     font-size: 20px;
   }
-
+  h1{
+    font-size: 25px;
+  }
   #app {
     justify-content: center;
   }
@@ -119,10 +114,12 @@ group {
 }
 @media not (max-width: 500px) {
 
-  .button{
+  .subheader div{
     font-size: 50px;
   }
-
+  h1{
+    font-size: 60px;
+  }
   #app {
     justify-content: left;
   }
@@ -153,12 +150,27 @@ header {
   background-color: rgb(36, 36, 36);
 }
 
-subheader {
+  
+
+.subheader {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   width: 100%;
   line-height: 1.5;
   background-color: rgb(51, 53, 56);
+  div{
+    
+  justify-content: center;
+  display: flex;
+      
+    text-align: center;
+    font-family: 'MaPolice', sans-serif;
+    text-transform: uppercase;
+    background-color: rgb(51, 53, 56);
+    width: 100%;
+    color: white;
+  }
 }
 
 main {

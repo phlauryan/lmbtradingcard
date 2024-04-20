@@ -55,13 +55,6 @@ let firstReading = true;
 
 window.addEventListener("deviceorientation", handleOrientation, false);
 
-const over = ref('nope')
-if (window.matchMedia("(hover: hover)").matches) {
-  over.value='okver';
-}else{
-  over.value='nope nope';
-}
-
 function handleOrientation (e) {
   if ( firstReading ) {
       firstReading = false;
@@ -161,36 +154,35 @@ function hoveroire() {
 //mouvement lors du scroll
 const startY = ref(0);
 var scroll;
-if (window.matchMedia("(hover: hover)").matches) {
-window.addEventListener('scroll', function (event) {
-  let direction = 1;
-  var scrollY = window.scrollY
-  if (scrollY > startY.value) {
-    direction = 1;
-  } else {
-    direction = -1;
-  }
-  startY.value = scrollY;
+  if (window.matchMedia("(hover: hover)").matches) {
+  window.addEventListener('scroll', function (event) {
+    let direction = 1;
+    var scrollY = window.scrollY
+    if (scrollY > startY.value) {
+      direction = 1;
+    } else {
+      direction = -1;
+    }
+    startY.value = scrollY;
 
-  window.clearTimeout(scroll);
+    window.clearTimeout(scroll);
 
-  tweenrotateXCoef.stop();
-  tweenrotateXCoef2.stop();
-  rotatecoef.value= {x:0,y:(0.5*direction)};
-
-  scroll = setTimeout(function () {
     tweenrotateXCoef.stop();
     tweenrotateXCoef2.stop();
-    tweenrotateXCoef = new TWEEN.Tween(rotatecoef.value)
-    tweenrotateXCoef.to({x:0,y: 0}, 1000).easing(TWEEN.Easing.Bounce.Out)
-    tweenrotateXCoef.startFromCurrentValues();
-  }, 300);
-}, false);
+    rotatecoef.value= {x:0,y:(0.5*direction)};
+
+    scroll = setTimeout(function () {
+      tweenrotateXCoef.stop();
+      tweenrotateXCoef2.stop();
+      tweenrotateXCoef = new TWEEN.Tween(rotatecoef.value)
+      tweenrotateXCoef.to({x:0,y: 0}, 1000).easing(TWEEN.Easing.Bounce.Out)
+      tweenrotateXCoef.startFromCurrentValues();
+    }, 300);
+  }, false);
 }
 </script>
 
 <template>
-  test {{"over"}}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div ref="divrotate" class="rotate">
