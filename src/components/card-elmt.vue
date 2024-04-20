@@ -106,10 +106,11 @@ window.addEventListener('scroll', function (event) {
   window.clearTimeout(scroll);
 
   tweenrotateXCoef.stop();
-  tweenrotateXCoef = new TWEEN.Tween(rotatecoef.value)
+  //tweenrotateXCoef = new TWEEN.Tween(rotatecoef.value)
   tweenrotateXCoef2.stop();
-  tweenrotateXCoef.to({x:0,y: (0.5 * direction)}, 100).easing(TWEEN.Easing.Cubic.Out)
-  tweenrotateXCoef.startFromCurrentValues();
+  //tweenrotateXCoef.to({x:0,y: (0.5 * direction)}, 50).easing(TWEEN.Easing.Bounce.Out)
+  //tweenrotateXCoef.startFromCurrentValues();
+  rotatecoef.value= {x:0,y:(0.5*direction)};
 
   scroll = setTimeout(function () {
     tweenrotateXCoef.stop();
