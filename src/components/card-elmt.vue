@@ -54,7 +54,11 @@ let rip=ref({
 let firstReading = true;
 
 window.addEventListener("deviceorientation", handleOrientation, false);
-
+let over = ref('nope')
+if (window.matchMedia("(hover: hover)").matches) {
+  over.value='okver'
+}else{over.value='nope nope'
+}
 function handleOrientation (e) {
   if ( firstReading ) {
       firstReading = false;
@@ -183,6 +187,7 @@ window.addEventListener('scroll', function (event) {
 </script>
 
 <template>
+  {{ over }}
   <div class='padding'>
     <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div ref="divrotate" class="rotate">

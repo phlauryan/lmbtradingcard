@@ -73,8 +73,7 @@ function bytype(){
   text-align: center;
   font-family: 'MaPolice', sans-serif;
   text-transform: uppercase;
-  background-color: rgb(51, 53, 56);;
-  font-size: 50px;
+  background-color: rgb(51, 53, 56);
   width: 100%;
   color: white;
 }
@@ -96,6 +95,11 @@ group {
 }
 
 @media (max-width: 500px) {
+  
+  .button{
+    font-size: 20px;
+  }
+
   #app {
     justify-content: center;
   }
@@ -114,6 +118,11 @@ group {
   }
 }
 @media not (max-width: 500px) {
+
+  .button{
+    font-size: 50px;
+  }
+
   #app {
     justify-content: left;
   }
