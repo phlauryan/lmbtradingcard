@@ -7,8 +7,6 @@ const props = defineProps({
     required: true
   }
 })
-
-console.log('ori group ',props.ori)
 </script>
 
 <template>

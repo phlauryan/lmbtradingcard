@@ -13,6 +13,7 @@
     "postgit": "git push && git subtree push --prefix dist origin gh-pages4"
   },
   "dependencies": {
+    "@tweenjs/tween.js": "^23.1.1",
     "lodash": "^4.17.21",
     "vue": "^3.4.21"
   },
