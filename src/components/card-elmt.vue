@@ -1,6 +1,7 @@
 <script setup>
 import { ref,  reactive, computed} from 'vue'
 import TWEEN from '@tweenjs/tween.js';
+import { flip } from 'lodash';
 const props = defineProps({
   carda: {
     type: Object,
@@ -74,10 +75,6 @@ function handleOrientation (e) {
   };
 }
 
-
-
-
-
 function maFrame(time) {
   /*console.log('xxxxxxxx : '+rotatecoef.value.x);
   console.log('yyyyyyyyy : '+rotatecoef.value.y);
@@ -95,6 +92,12 @@ function maFrame(time) {
 };
 window.requestAnimationFrame(maFrame)
 
+//variable flip
+const realrotatedeg=ref({x:0,y:0});
+const isflip=ref(false)
+const flipping=ref(false)
+const imgback ="./images/back.png"
+
 const visu = props.carda.visu;
 const holo = props.carda.type === "holo" ||props.carda.type === "auto";
 
@@ -106,12 +109,33 @@ const height = 470;
 const decalageMaxXDeg =15;
 const decalageMaxYDeg =20;
 
+
+//flip visibility
+const frontVisibility = computed(() => {
+  console.log("frontVisibility ? ",isflip.value? "hidden":"visible");
+  return isflip.value? "hidden":"visible";
+})
+const backVisibility = computed(() => {
+  console.log("backVisibility ? ",isflip.value? "visible":"hidden");
+  return isflip.value? "visible":"hidden";
+})
+
 //rotateDeg -decalageMaxDeg to decalageMaxYDeg
 const rotateXDeg = computed(() => {
-  return (rotatecoef.value.y * decalageMaxYDeg)+'deg';
+  if(realrotatedeg.value.y>-90 && realrotatedeg.value.y<90 && realrotatedeg.value.y !=0 ){
+    return realrotatedeg.value.y+'deg';
+  }else{
+    return (rotatecoef.value.y * decalageMaxYDeg)+'deg';
+  }  
 })
 const rotateYDeg = computed(() => {
-  return -1* (rotatecoef.value.x * decalageMaxXDeg)+'deg';
+  if(realrotatedeg.value.x>-180 && realrotatedeg.value.x<180 && realrotatedeg.value.x !=0 ){
+    console.log("rotateYDeg1 ? ",realrotatedeg.value.x+'deg');
+    return realrotatedeg.value.x+'deg';
+  }else{    
+    console.log("rotateYDeg2 ? ",(-1* (rotatecoef.value.x * decalageMaxXDeg)+'deg'));
+    return -1* (rotatecoef.value.x * decalageMaxXDeg)+'deg';
+  }  
 })
 //glare 0 to 100
 const glareX = computed(() => {
@@ -131,6 +155,34 @@ const shineY = computed(() => {
 const fromCenter = computed(() => {
   return (Math.abs(rotatecoef.value.x) + Math.abs(rotatecoef.value.y))/2;
 })
+
+//au cliquue
+function ouaichclick(event){
+  if(!flipping.value){
+    var tweenflip1 = new TWEEN.Tween(realrotatedeg.value)
+    flipping.value=true
+    tweenflip1.to({x:90}, 500).easing(TWEEN.Easing.Cubic.IN).onComplete(function (object) {
+      isflip.value=true;
+      realrotatedeg.value.x=-90
+      var tweenflip2 = new TWEEN.Tween(realrotatedeg.value)
+      tweenflip2.to({x:0}, 500).easing(TWEEN.Easing.Cubic.OUT).onComplete(function (object) {
+        tweenflip1.to({x:90}, 500).easing(TWEEN.Easing.Cubic.IN).onComplete(function (object) {
+          isflip.value=false;
+          realrotatedeg.value.x=-90
+          var tweenflip2 = new TWEEN.Tween(realrotatedeg.value)
+          tweenflip2.to({x:0}, 500).easing(TWEEN.Easing.Cubic.OUT).onComplete(function (object) {
+            isflip.value=false;
+            flipping.value=false;
+          })
+          tweenflip2.start()
+        })
+        tweenflip1.start()
+      })
+      tweenflip2.start()
+    })
+    tweenflip1.start()
+  }
+}
 
 //mouvement de la carte fonction de la sourie
 function handleMouseMove(event) {
@@ -184,9 +236,10 @@ var scroll;
 
 <template>
   <div class='padding'>
-    <div class="contenant" @mouseleave="hoveroire" @mousemove="handleMouseMove">
+    <div class="contenant" @mousedown="ouaichclick" @mouseleave="hoveroire" @mousemove="handleMouseMove">
       <div ref="divrotate" class="rotate">
         <img class="card" :src="visu" />
+        <img class="back" :src="imgback" />
         <div v-if="holo" class="shine"></div>
         <div class="card__glare"></div>
       </div>
@@ -200,7 +253,18 @@ img {
   max-width: 300px;
 }
 
+
+.back{
+  position: absolute;  
+  visibility: v-bind('backVisibility');
+}
+
+.card{
+  visibility: v-bind('frontVisibility');
+}
+
 .shine {
+   visibility: v-bind('frontVisibility');
   --space: 5%;
   --angle: 133deg;
   --imgsize: 50%;
@@ -237,8 +301,14 @@ img {
 }
 
 .rotate {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   transform: rotateX(v-bind('rotateXDeg')) rotateY(v-bind('rotateYDeg'));
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rotate:hover {
+  -webkit-box-shadow:0px 0px 9px 3px rgba(255,241,148,0.86);
+-moz-box-shadow: 0px 0px 9px 3px rgba(255,241,148,0.86);
+box-shadow: 0px 0px 9px 3px rgba(255,241,148,0.86);
 }
 
 .card__glare {
