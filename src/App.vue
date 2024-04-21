@@ -45,6 +45,9 @@ function bytype(){
     <img class="logo" src="./images/logo.png" />
   </header>
   <div class="subheader">
+    <div class="booster">
+     <img src="./images/booster.png">
+    </div>
     <div>Grouper par</div>
     <div>
       <div class="button" @click="byteam">Equipes</div>
@@ -59,6 +62,20 @@ function bytype(){
 </template>
 
 <style>
+.booster{
+  visibility: hidden;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  img{
+    transform: rotateX(28deg) rotateY(-22deg) rotateZ(25deg);
+    position:fixed;
+    width: 300px;
+  }
+  top: 50%;
+  left: 50%;;
+  z-index: 999;
+}
+
 * {
   padding: 0;
   margin: 0;

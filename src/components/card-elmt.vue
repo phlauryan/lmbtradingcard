@@ -275,7 +275,7 @@ img {
   --posx: v-bind('shineX');
   --my: v-bind('shineY');
   --mx: v-bind('shineX');
-  --hyp: v-bind('fromCenter');
+  --hyp: v-bind('fromCenter')*1.5;
   width: 100%;
   aspect-ratio: .714;
   mix-blend-mode: color-dodge;
