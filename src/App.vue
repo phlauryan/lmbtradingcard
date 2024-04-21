@@ -23,7 +23,7 @@ let groupbytype = [];
 _.forEach(types, function (type) {
   groupbytype.push({
     groupname: type,
-    cards: _.filter(cards, function (card) { return card.type === type; }).sort((a, b) => a.team.localeCompare(b.team))
+    cards: _.filter(cards, function (card) { return card.type === type; }).sort((a, b) => b.team.localeCompare(a.team))
   });
 });
 
