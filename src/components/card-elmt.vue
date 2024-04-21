@@ -16,9 +16,12 @@ var tweenrotateXCoef = new TWEEN.Tween(rotatecoef.value)
 var tweenrotateXCoef3 = new TWEEN.Tween(rotatecoef.value)
 var tweenrotateXCoef2 = new TWEEN.Tween(rotatecoef.value)
 
+
 /* mouvement a l'affichage de la page*/
-tweenrotateXCoef3.to({x:0.6,y:0.9}, 500).easing(TWEEN.Easing.Cubic.Out).chain(tweenrotateXCoef2.to({x:0,y:0}, 1000).easing(TWEEN.Easing.Bounce.Out))
-tweenrotateXCoef3.start()
+if (window.matchMedia("(hover: hover)").matches) {
+  tweenrotateXCoef3.to({x:0.6,y:0.9}, 500).easing(TWEEN.Easing.Cubic.Out).chain(tweenrotateXCoef2.to({x:0,y:0}, 1000).easing(TWEEN.Easing.Bounce.Out))
+  tweenrotateXCoef3.start()
+}
 
 //utilisation de l'accelerometre
 if (!window.matchMedia("(hover: hover)").matches) {
