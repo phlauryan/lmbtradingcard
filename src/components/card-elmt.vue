@@ -164,16 +164,16 @@ function ouaichclick(event){
   if(!flipping.value){
     var tweenflip1 = new TWEEN.Tween(realrotatedeg.value)
     flipping.value=true
-    tweenflip1.to({x:90}, 500).easing(TWEEN.Easing.Cubic.IN).onComplete(function (object) {
+    tweenflip1.to({x:90}, 200).easing(TWEEN.Easing.Cubic.IN).onComplete(function (object) {
       isflip.value=true;
       realrotatedeg.value.x=-90
       var tweenflip2 = new TWEEN.Tween(realrotatedeg.value)
-      tweenflip2.to({x:0}, 500).easing(TWEEN.Easing.Cubic.OUT).onComplete(function (object) {
-        tweenflip1.to({x:90}, 500).easing(TWEEN.Easing.Cubic.IN).onComplete(function (object) {
+      tweenflip2.to({x:0}, 200).easing(TWEEN.Easing.Cubic.OUT).onComplete(function (object) {
+        tweenflip1.to({x:90}, 200).easing(TWEEN.Easing.Cubic.IN).onComplete(function (object) {
           isflip.value=false;
           realrotatedeg.value.x=-90
           var tweenflip2 = new TWEEN.Tween(realrotatedeg.value)
-          tweenflip2.to({x:0}, 500).easing(TWEEN.Easing.Cubic.OUT).onComplete(function (object) {
+          tweenflip2.to({x:0}, 200).easing(TWEEN.Easing.Cubic.OUT).onComplete(function (object) {
             isflip.value=false;
             flipping.value=false;
           })
