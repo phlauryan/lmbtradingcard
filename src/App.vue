@@ -161,7 +161,10 @@ body {
   background-color: rgb(57, 60, 65);
 }
 
-header {
+header {   
+  position: sticky;
+  top: 0;
+  z-index: 99;
   display: flex;
   justify-content: center;
   width: 100%;
