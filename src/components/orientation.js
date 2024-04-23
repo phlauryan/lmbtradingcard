@@ -1,5 +1,5 @@
 import { ref, onMounted, onUnmounted } from 'vue'
-
+/*
 export function useOrientation() {
   const rotatecoef = ref(0)
 
@@ -60,4 +60,4 @@ function handleOrientation (e) {
 
   
   return rotatecoef
-}
+}*/

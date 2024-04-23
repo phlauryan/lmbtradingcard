@@ -1,6 +1,6 @@
 <script setup>
 import { ref,  reactive, computed,onUnmounted} from 'vue'
-import { useOrientation } from './orientation.js'
+//import { useOrientation } from './orientation.js'
 import TWEEN from '@tweenjs/tween.js';
 import { flip } from 'lodash';
 const props = defineProps({
@@ -25,7 +25,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 }
 
 //utilisation de l'accelerometre
-/*
+
 const anglesdevicemax=20;
 const getRawOrientation = function(e) {
   if ( !e ) {
@@ -78,7 +78,7 @@ function handleOrientation (e) {
 
 if (!window.matchMedia("(hover: hover)").matches) {
   window.addEventListener("deviceorientation", handleOrientation, false);
-}*/
+}
 
 
 function maFrame(time) {
@@ -160,12 +160,12 @@ const shineY = computed(() => {
 const fromCenter = computed(() => {
   return (Math.abs(rotatecoef.value.x) + Math.abs(rotatecoef.value.y))/2;
 })
-
+/*
 if (!window.matchMedia("(hover: hover)").matches) {
   rotatecoef = computed(() => {
     return useOrientation();
   })
-}
+}*/
 
 //au cliquue
 function ouaichclick(event){
@@ -248,7 +248,7 @@ function funcScroll(event) {
 onUnmounted(()=>{
   TWEEN.removeAll();
   window.removeEventListener('scroll', funcScroll);
-//  window.removeEventListener("deviceorientation", handleOrientation);
+  window.removeEventListener("deviceorientation", handleOrientation);
   window.cancelAnimationFrame(animationFrameId);
 })
 </script>
