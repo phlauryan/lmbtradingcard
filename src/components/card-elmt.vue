@@ -1,5 +1,5 @@
 <script setup>
-import { ref,  reactive, computed} from 'vue'
+import { ref,  reactive, computed,onUnmounted} from 'vue'
 import TWEEN from '@tweenjs/tween.js';
 import { flip } from 'lodash';
 const props = defineProps({
@@ -24,7 +24,6 @@ if (window.matchMedia("(hover: hover)").matches) {
 }
 
 //utilisation de l'accelerometre
-if (!window.matchMedia("(hover: hover)").matches) {
 
 const anglesdevicemax=20;
 const getRawOrientation = function(e) {
@@ -57,7 +56,6 @@ let rip=ref({
 });
 let firstReading = true;
 
-window.addEventListener("deviceorientation", handleOrientation, false);
 
 function handleOrientation (e) {
   if ( firstReading ) {
@@ -66,8 +64,8 @@ function handleOrientation (e) {
     }
     
     rip = getOrientationObject(e);
-    const beta =rip.relative.beta;
-    const gamma = rip.relative.gamma;
+    let beta =rip.relative.beta;
+    let gamma = rip.relative.gamma;
     if(beta > anglesdevicemax){
       beta=anglesdevicemax;
     }
@@ -76,6 +74,9 @@ function handleOrientation (e) {
     }
     const xcalc= rotatecoef.value={x:(gamma/anglesdevicemax),y:(beta/anglesdevicemax) };
   };
+
+if (!window.matchMedia("(hover: hover)").matches) {
+  window.addEventListener("deviceorientation", handleOrientation, false);
 }
 
 function maFrame(time) {
@@ -209,8 +210,7 @@ function hoveroire() {
 //mouvement lors du scroll
 const startY = ref(0);
 var scroll;
-  if (window.matchMedia("(hover: hover)").matches) {
-  window.addEventListener('scroll', function (event) {
+function funcScroll(event) {
     let direction = 1;
     var scrollY = window.scrollY
     if (scrollY > startY.value) {
@@ -233,8 +233,15 @@ var scroll;
       tweenrotateXCoef.to({x:0,y: 0}, 1000).easing(TWEEN.Easing.Bounce.Out)
       tweenrotateXCoef.startFromCurrentValues();
     }, 300);
-  }, false);
+  }
+  if (window.matchMedia("(hover: hover)").matches) {
+  window.addEventListener('scroll', funcScroll, false);
 }
+
+onUnmounted(()=>{
+  window.removeEventListener('scroll', funcScroll);
+  window.removeEventListener("deviceorientation", handleOrientation);
+})
 </script>
 
 <template>
