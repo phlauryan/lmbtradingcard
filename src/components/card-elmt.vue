@@ -1,5 +1,6 @@
 <script setup>
 import { ref,  reactive, computed,onUnmounted} from 'vue'
+import { useOrientation } from './orientation.js'
 import TWEEN from '@tweenjs/tween.js';
 import { flip } from 'lodash';
 const props = defineProps({
@@ -24,7 +25,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 }
 
 //utilisation de l'accelerometre
-
+/*
 const anglesdevicemax=20;
 const getRawOrientation = function(e) {
   if ( !e ) {
@@ -77,7 +78,8 @@ function handleOrientation (e) {
 
 if (!window.matchMedia("(hover: hover)").matches) {
   window.addEventListener("deviceorientation", handleOrientation, false);
-}
+}*/
+
 
 function maFrame(time) {
   /*console.log('xxxxxxxx : '+rotatecoef.value.x);
@@ -134,13 +136,12 @@ const rotateXDeg = computed(() => {
 })
 const rotateYDeg = computed(() => {
   if(realrotatedeg.value.x>-180 && realrotatedeg.value.x<180 && realrotatedeg.value.x !=0 ){
-    console.log("rotateYDeg1 ? ",realrotatedeg.value.x+'deg');
     return realrotatedeg.value.x+'deg';
   }else{    
-    console.log("rotateYDeg2 ? ",(-1* (rotatecoef.value.x * decalageMaxXDeg)+'deg'));
     return -1* (rotatecoef.value.x * decalageMaxXDeg)+'deg';
   }  
 })
+
 //glare 0 to 100
 const glareX = computed(() => {
   return ((rotatecoef.value.x +1)/2 * width)+'px';
@@ -159,6 +160,12 @@ const shineY = computed(() => {
 const fromCenter = computed(() => {
   return (Math.abs(rotatecoef.value.x) + Math.abs(rotatecoef.value.y))/2;
 })
+
+if (!window.matchMedia("(hover: hover)").matches) {
+  rotatecoef = computed(() => {
+    return useOrientation();
+  })
+}
 
 //au cliquue
 function ouaichclick(event){
@@ -239,8 +246,9 @@ function funcScroll(event) {
 }
 
 onUnmounted(()=>{
+  TWEEN.removeAll();
   window.removeEventListener('scroll', funcScroll);
-  window.removeEventListener("deviceorientation", handleOrientation);
+//  window.removeEventListener("deviceorientation", handleOrientation);
   window.cancelAnimationFrame(animationFrameId);
 })
 </script>
