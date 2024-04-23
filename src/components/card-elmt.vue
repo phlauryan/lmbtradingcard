@@ -92,9 +92,9 @@ function maFrame(time) {
   console.log('shineY : '+shineY.value);
   console.log('fromCenter : '+fromCenter.value);;*/
   TWEEN.update(time)
-  window.requestAnimationFrame(maFrame)
+  animationFrameId = window.requestAnimationFrame(maFrame)
 };
-window.requestAnimationFrame(maFrame)
+let animationFrameId = window.requestAnimationFrame(maFrame)
 
 //variable flip
 const realrotatedeg=ref({x:0,y:0});
@@ -241,6 +241,7 @@ function funcScroll(event) {
 onUnmounted(()=>{
   window.removeEventListener('scroll', funcScroll);
   window.removeEventListener("deviceorientation", handleOrientation);
+  window.cancelAnimationFrame(animationFrameId);
 })
 </script>
 
