@@ -118,11 +118,9 @@ const decalageMaxYDeg =20;
 
 //flip visibility
 const frontVisibility = computed(() => {
-  console.log("frontVisibility ? ",isflip.value? "hidden":"visible");
   return isflip.value? "hidden":"visible";
 })
 const backVisibility = computed(() => {
-  console.log("backVisibility ? ",isflip.value? "visible":"hidden");
   return isflip.value? "visible":"hidden";
 })
 
@@ -242,8 +240,8 @@ function funcScroll(event) {
     }, 300);
   }
   if (window.matchMedia("(hover: hover)").matches) {
-  window.addEventListener('scroll', funcScroll, false);
-}
+    window.addEventListener('scroll', funcScroll, false);
+  }
 
 onUnmounted(()=>{
   TWEEN.removeAll();

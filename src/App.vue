@@ -5,15 +5,16 @@ import _ from 'lodash';
 import { ref } from 'vue'
 let teams = [];
 let types = [];
+let par= ref("Par carte");
 _.forEach(cards, function (card) {
   teams.push(card.team);
   types.push(card.type);
 });
 teams = _.uniq(teams);
 types = _.uniq(types);
-let groupsbyteam = [];
+let groupbyteam = [];
 _.forEach(teams, function (team) {
-  groupsbyteam.push({
+  groupbyteam.push({
     groupname: team,
     cards: _.filter(cards, function (card) { return card.team === team; }).sort((a, b) => a.type.localeCompare(b.type))
   });
@@ -27,38 +28,37 @@ _.forEach(types, function (type) {
   });
 });
 
-let groupstoshow=ref(groupsbyteam);
+let groupstoshow=ref(groupbyteam);
 
-function byteam(){
-  console.log("team");
-  groupstoshow.value=groupsbyteam;
-}
-
-function bytype(){
-  console.log("type");
-  groupstoshow.value=groupbytype;
+function changeby(){
+  if(par.value=="Par carte"){
+    par.value="Par équipe";
+    groupstoshow.value=groupbytype;
+  }else{
+    par.value="Par carte";
+    groupstoshow.value=groupbyteam;
+  }
 }
 </script>
 
 <template>
   <header>
-    <img class="logo" src="./images/logo.png" />
-  </header>
-  <div class="subheader">
-    <div class="booster">
-     <img src="./images/booster.png">
+      <img class="logo" src="./images/logo.png">
+    </header>
+    <div class="subheader">
+      <div class="booster">
+       <img src="./images/booster.png">
+      </div>
+        <div class="button" @click="changeby">{{par}}</div>
     </div>
-    <div>Grouper par</div>
-    <div>
-      <div class="button" @click="byteam">Equipes</div>
-      <div class="button" @click="bytype">Cartes</div>
-    </div>
-  </div>
-  <main>
-    <div class="group" v-for="grouptoshow in groupstoshow">
+    <main>
+      <div class="group" v-for="grouptoshow in groupstoshow">
       <cardsgroup :group="grouptoshow"/>
     </div>
   </main>
+  <footer>
+    Il manque des joueurs ? · Combien ça coute ?
+  </footer>
 </template>
 
 <style>
@@ -79,6 +79,16 @@ function bytype(){
 * {
   padding: 0;
   margin: 0;
+}
+footer {
+  font-family: 'MaPolice', sans-serif;
+  text-align: center;
+  color:  white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  z-index: 99;
 }
 @font-face {
   font-family: 'MaPolice';
@@ -107,8 +117,7 @@ group {
 }
 
 @media (max-width: 500px) {
-  
-  .subheader div{
+  footer {
     font-size: 20px;
   }
   h1{
@@ -132,9 +141,8 @@ group {
   }
 }
 @media not (max-width: 500px) {
-
-  .subheader div{
-    font-size: 50px;
+  footer {
+    font-size: 30px;
   }
   h1{
     font-size: 60px;
@@ -172,8 +180,51 @@ header {
   background-color: rgb(36, 36, 36);
 }
 
-  
+.button {
+  position: fixed;
+  right: 0;
+  z-index: 1000;   
+  font-family: 'MaPolice', sans-serif;
+  text-transform: uppercase;
+  color:  rgb(51, 53, 56);
+  width: auto;
+  background-color:white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
+}
 
+@media (max-width: 500px) {
+.button {
+  top:100px;
+  font-size: 20px;
+  padding-top: 5px; 
+  padding-left: 30px; 
+  padding-right: 10px; 
+  padding-bottom: 5px; 
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+}
+@media not (max-width: 500px) {
+.button {
+  top: 80px;
+  font-size: 40px;
+  padding-top: 10px; 
+  padding-left: 75px; 
+  padding-right: 10px; 
+  padding-bottom: 10px; 
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+}
+.button:hover {
+  color:  white;
+  background-color:rgb(51, 53, 56);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+
+}
+  /*
 .subheader {
   display: flex;
   flex-flow: column wrap;
@@ -193,7 +244,7 @@ header {
     color: white;
   }
 }
-
+*/
 main {
   div {
     display: flex;
