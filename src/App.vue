@@ -46,9 +46,6 @@ function changeby(){
       <img class="logo" src="./images/logo.png">
     </header>
     <div class="subheader">
-      <div class="booster">
-       <img src="./images/booster.png">
-      </div>
         <div class="button" @click="changeby">{{par}}</div>
     </div>
     <main>
