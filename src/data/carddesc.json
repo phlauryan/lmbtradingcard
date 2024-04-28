@@ -40,6 +40,19 @@
         "type": "holo",
         "firstname": "thomas",
         "lastname": "ravet"
+    },{
+        "visu": "./images/animafond valentin millet naas classic.jpg",
+        "team": "animafond",
+        "type": "classic",
+        "firstname": "cyril",
+        "lastname": "ravet"
+    },
+    {
+        "visu": "./images/animafond valentin millet naas holo.jpg",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "cyril",
+        "lastname": "ravet"
     },
     {
         "visu": "./images/bam eric classic.png",
@@ -173,6 +186,20 @@
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
+    },
+    {
+        "visu": "./images/cyclas nat classic.png",
+        "team": "cyclas",
+        "type": "classic",
+        "firstname": "nathanael",
+        "lastname": "bogdan"
+    },
+    {
+        "visu": "./images/cyclas nat holo.png",
+        "team": "cyclas",
+        "type": "holo",
+        "firstname": "nathanael",
+        "lastname": "bogdan"
     },
     {
         "visu": "./images/cyclas amos classic.png",
@@ -749,7 +776,7 @@
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage Marie Boros.png",
+        "visu": "./images/Vintage Marie Boros.jpg",
         "team": "wheel frite",
         "type": "vintage",
         "firstname": "Marie",
@@ -768,5 +795,40 @@
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
+    },
+    {
+        "visu": "./images/vintage berkley jim.png",
+        "team": "berkeley revolution",
+        "type": "vintage",
+        "firstname": "jim",
+        "lastname": "sowers"
+    },
+    {
+        "visu": "./images/cyclas gab classic.png",
+        "team": "cyclas",
+        "type": "classic",
+        "firstname": "gabriel",
+        "lastname": "berset"
+    },
+    {
+        "visu": "./images/cyclas gab holo.png",
+        "team": "cyclas",
+        "type": "holo",
+        "firstname": "gabriel",
+        "lastname": "berset"
+    },
+    {
+        "visu": "./images/troubadours benoit plumere classic.png",
+        "team": "troubadours",
+        "type": "classic",
+        "firstname": "benoit",
+        "lastname": "plumeret"
+    },
+    {
+        "visu": "./images/troubadours benoit plumere holo.png",
+        "team": "troubadours",
+        "type": "holo",
+        "firstname": "benoit",
+        "lastname": "plumeret"
     }
 ]
