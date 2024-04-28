@@ -830,5 +830,40 @@
         "type": "holo",
         "firstname": "benoit",
         "lastname": "plumeret"
+    },
+    {
+        "visu": "./images/bam bertrand classic.png",
+        "team": "bam",
+        "type": "classic",
+        "firstname": "bertrand",
+        "lastname": "bordonado"
+    },
+    {
+        "visu": "./images/bam bertrand holo.png",
+        "team": "bam",
+        "type": "holo",
+        "firstname": "bertrand",
+        "lastname": "bordonado"
+    },
+    {
+        "visu": "./images/Vintage franck chovelon.png",
+        "team": "woom",
+        "type": "vintage",
+        "firstname": "franck",
+        "lastname": "chovelon"
+    },
+    {
+        "visu": "./images/animafond marin classic.png",
+        "team": "animafond",
+        "type": "classic",
+        "firstname": "marin",
+        "lastname": "michaud"
+    },
+    {
+        "visu": "./images/animafond marin holo.png",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "marin",
+        "lastname": "michaud"
     }
 ]
