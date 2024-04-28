@@ -26,7 +26,7 @@ if (window.matchMedia("(hover: hover)").matches) {
 
 //utilisation de l'accelerometre
 
-const anglesdevicemax=20;
+const anglesdevicemax=30;
 const getRawOrientation = function(e) {
   if ( !e ) {
     return { alpha: 0, beta: 0, gamma: 0 };
@@ -70,8 +70,14 @@ function handleOrientation (e) {
     if(beta > anglesdevicemax){
       beta=anglesdevicemax;
     }
+    if(beta < -1*anglesdevicemax){
+      beta=anglesdevicemax*-1;
+    }
     if(gamma > anglesdevicemax){
       gamma=anglesdevicemax;
+    }
+    if(gamma < anglesdevicemax*-1){
+      gamma=anglesdevicemax*-1;
     }
     const xcalc= rotatecoef.value={x:(gamma/anglesdevicemax),y:(beta/anglesdevicemax) };
   };

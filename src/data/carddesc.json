@@ -749,6 +749,13 @@
         "lastname": "lastname"
     },
     {
+        "visu": "./images/Vintage Marie Boros.png",
+        "team": "wheel frite",
+        "type": "vintage",
+        "firstname": "Marie",
+        "lastname": "Boros"
+    },
+    {
         "visu": "./images/woom zadig classic.png",
         "team": "woom",
         "type": "classic",
