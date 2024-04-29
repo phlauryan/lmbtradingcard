@@ -865,5 +865,19 @@
         "type": "holo",
         "firstname": "marin",
         "lastname": "michaud"
+    },
+    {
+        "visu": "./images/monogygote benjamin perreau classic.png",
+        "team": "monogygote",
+        "type": "classic",
+        "firstname": "benjamin",
+        "lastname": "perreau"
+    },
+    {
+        "visu": "./images/monogygote benjamin perreau holo.png",
+        "team": "monogygote",
+        "type": "holo",
+        "firstname": "benjamin",
+        "lastname": "perreau"
     }
 ]
