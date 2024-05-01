@@ -879,5 +879,68 @@
         "type": "holo",
         "firstname": "benjamin",
         "lastname": "perreau"
+    },
+    {
+        "visu": "./images/troubadours Valentin Klepper classic.png",
+        "team": "troubadours",
+        "type": "classic",
+        "firstname": "Valentin",
+        "lastname": "Klepper"
+    },
+    {
+        "visu": "./images/troubadours Valentin Klepper holo.png",
+        "team": "troubadours",
+        "type": "holo",
+        "firstname": "Valentin",
+        "lastname": "Klepper"
+    },
+    {
+        "visu": "./images/monogygote Quentin Monard classic.png",
+        "team": "monogygote",
+        "type": "classic",
+        "firstname": "Quentin",
+        "lastname": "Monard"
+    },
+    {
+        "visu": "./images/monogygote Quentin Monard holo.png",
+        "team": "monogygote",
+        "type": "holo",
+        "firstname": "Quentin",
+        "lastname": "Monard"
+    },
+    {
+        "visu": "./images/monogygote Freddy Livet classic.png",
+        "team": "monogygote",
+        "type": "classic",
+        "firstname": "Freddy",
+        "lastname": "Livet"
+    },
+    {
+        "visu": "./images/monogygote Freddy Livet holo.png",
+        "team": "monogygote",
+        "type": "holo",
+        "firstname": "Freddy",
+        "lastname": "Livet"
+    },
+    {
+        "visu": "./images/Vintage Karim kammah.png",
+        "team": "monogygote",
+        "type": "vintage",
+        "firstname": "Karim",
+        "lastname": "kammah"
+    },
+    {
+        "visu": "./images/monostars Antoine rault classic.png",
+        "team": "monostars",
+        "type": "classic",
+        "firstname": "Antoine",
+        "lastname": "rault"
+    },
+    {
+        "visu": "./images/monostars Antoine rault holo.png",
+        "team": "monostars",
+        "type": "holo",
+        "firstname": "Antoine",
+        "lastname": "rault"
     }
 ]
