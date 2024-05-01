@@ -942,5 +942,12 @@
         "type": "holo",
         "firstname": "Antoine",
         "lastname": "rault"
+    },
+    {
+        "visu": "./images/Vintage Wa Lee Salas.png",
+        "team": "portorico all stars",
+        "type": "vintage",
+        "firstname": "Wa Lee",
+        "lastname": "Salas"
     }
 ]
