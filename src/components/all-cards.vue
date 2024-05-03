@@ -55,7 +55,7 @@ function changeby(){
     </div>
   </main>
   <footer>
-    Il manque des joueurs ? · <router-link to="/about">Combien ça coute ?</router-link>
+    <router-link to="/about"> Il manque des joueurs ? · Combien ça coute ?</router-link>
   </footer>
 </template>
 
@@ -90,7 +90,7 @@ footer {
 }
 @font-face {
   font-family: 'MaPolice';
-  src: url("./font/olympiccarrierlaserital.ttf") format('truetype');
+  src: url("../font/olympiccarrierlaserital.ttf") format('truetype');
 }
 
 .logo {
@@ -116,7 +116,7 @@ group {
 
 @media (max-width: 500px) {
   footer {
-    font-size: 20px;
+    font-size: 15px;
   }
   h1{
     font-size: 25px;

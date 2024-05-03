@@ -47,7 +47,7 @@ export default {
 }
 @font-face {
   font-family: 'MaPolice';
-  src: url("./font/olympiccarrierlaserital.ttf") format('truetype');
+  src: url("../font/olympiccarrierlaserital.ttf") format('truetype');
 }
 .logo {
   padding: 12px;
