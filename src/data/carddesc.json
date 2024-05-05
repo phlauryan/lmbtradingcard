@@ -949,5 +949,19 @@
         "type": "vintage",
         "firstname": "Wa Lee",
         "lastname": "Salas"
+    },
+    {
+        "visu": "./images/monogre Thierry Dumonteil classic.png",
+        "team": "monogre",
+        "type": "classic",
+        "firstname": "Thierry",
+        "lastname": "Dumonteil"
+    },
+    {
+        "visu": "./images/monogre Thierry Dumonteil holo.png",
+        "team": "monogre",
+        "type": "holo",
+        "firstname": "Thierry",
+        "lastname": "Dumonteil"
     }
 ]
