@@ -7,6 +7,8 @@ import logo from '../images/logo.png'
 let teams = [];
 let types = [];
 let par= ref("Par carte");
+let subpar= ref("Par équipe");
+
 _.forEach(cards, function (card) {
   teams.push(card.team);
   types.push(card.type);
@@ -34,9 +36,11 @@ let groupstoshow=ref(groupbyteam);
 function changeby(){
   if(par.value=="Par carte"){
     par.value="Par équipe";
+    subpar.value="Par carte";
     groupstoshow.value=groupbytype;
   }else{
     par.value="Par carte";
+    subpar.value="Par équipe";
     groupstoshow.value=groupbyteam;
   }
 }
@@ -47,7 +51,8 @@ function changeby(){
       <img class="logo" :src="logo">
     </header>
     <div class="subheader">
-        <div class="button" @click="changeby">{{par}}</div>
+        <div class="button" @click="changeby">{{par}}</div>        
+        <div class="buttonsub" @click="changeby">{{par}}</div>
     </div>
     <main>
       <div class="group" v-for="grouptoshow in groupstoshow">
@@ -190,6 +195,18 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
 }
 
+.buttonsub {
+  position: fixed;
+  right: 0;
+  z-index: 999;   
+  font-family: 'MaPolice', sans-serif;
+  text-transform: uppercase;
+  color:  white;
+  width: auto;
+  background-color:rgb(153, 153, 153);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
+}
+
 @media (max-width: 500px) {
 .button {
   top:100px;
@@ -201,6 +218,19 @@ header {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
+
+
+.buttonsub {
+  top:129px;
+  font-size: 10px;
+  padding-top: 5px; 
+  padding-left: 30px; 
+  padding-right: 10px; 
+  padding-bottom: 5px; 
+  border-top: 2px solid rgb(51, 53, 56);
+  border-bottom: 2px solid rgb(51, 53, 56);
+}
+
 }
 @media not (max-width: 500px) {
 .button {
@@ -213,14 +243,36 @@ header {
   border-top: 5px solid white;
   border-bottom: 5px solid white;
 }
+
+.buttonsub {
+  top:134px;
+  font-size: 20px;
+  padding-top: 10px; 
+  padding-left: 75px; 
+  padding-right: 10px; 
+  padding-bottom: 10px; 
+  border-top: 5px solid rgb(51, 53, 56);
+  border-bottom: 5px solid rgb(51, 53, 56);
 }
-.button:hover {
+
+}
+
+.subheader:hover{
+.button {
   color:  white;
-  background-color:rgb(51, 53, 56);
+  background-color:rgb(153, 153, 153);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
+  border-top: 5px solid rgb(153, 153, 153);
+  border-bottom: 5px solid rgb(153, 153, 153);
+}
+
+.buttonsub {
+  color:  rgb(51, 53, 56);
+  background-color:white;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
   border-top: 5px solid white;
   border-bottom: 5px solid white;
-
+}
 }
   /*
 .subheader {
