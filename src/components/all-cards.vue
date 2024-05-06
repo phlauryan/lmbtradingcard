@@ -52,7 +52,7 @@ function changeby(){
     </header>
     <div class="subheader">
         <div class="button" @click="changeby">{{par}}</div>        
-        <div class="buttonsub" @click="changeby">{{par}}</div>
+        <div class="buttonsub" @click="changeby">{{subpar}}</div>
     </div>
     <main>
       <div class="group" v-for="grouptoshow in groupstoshow">
@@ -258,13 +258,13 @@ header {
 }
 
 .subheader:hover{
-.button {
+/*.button {
   color:  white;
   background-color:rgb(153, 153, 153);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
   border-top: 5px solid rgb(153, 153, 153);
   border-bottom: 5px solid rgb(153, 153, 153);
-}
+}*/
 
 .buttonsub {
   color:  rgb(51, 53, 56);
