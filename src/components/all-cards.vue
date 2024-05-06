@@ -184,6 +184,7 @@ header {
 }
 
 .button {
+  cursor: pointer;
   position: fixed;
   right: 0;
   z-index: 1000;   
@@ -196,6 +197,7 @@ header {
 }
 
 .buttonsub {
+  cursor: pointer;
   position: fixed;
   right: 0;
   z-index: 999;   

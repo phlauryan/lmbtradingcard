@@ -319,6 +319,7 @@ img {
 }
 
 .contenant {
+  cursor: pointer;
   perspective: 800px;
   transform-style: preserve-3d;
 }
