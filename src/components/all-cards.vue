@@ -270,8 +270,8 @@ header {
   color:  rgb(51, 53, 56);
   background-color:white;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  /*border-top: 5px solid white;
+  border-bottom: 5px solid white;*/
 }
 }
   /*
