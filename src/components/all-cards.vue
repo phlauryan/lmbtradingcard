@@ -94,8 +94,12 @@ footer {
   z-index: 99;
 }
 @font-face {
-  font-family: 'MaPolice';
+  font-family: 'MaPoliceRaye';
   src: url("../font/olympiccarrierlaserital.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'MaPolice';
+  src: url("../font/olympiccarrier.ttf") format('truetype');
 }
 
 .logo {
@@ -103,7 +107,7 @@ footer {
 }
 
 h1 {
-  font-family: 'MaPolice', sans-serif;
+  font-family: 'MaPoliceRaye', sans-serif;
   text-transform: uppercase;
   padding-top: 22px;
   padding-left: 22px;
@@ -122,6 +126,7 @@ group {
 @media (max-width: 500px) {
   footer {
     font-size: 15px;
+    padding: 7px;
   }
   h1{
     font-size: 25px;
@@ -146,6 +151,7 @@ group {
 @media not (max-width: 500px) {
   footer {
     font-size: 30px;
+    padding: 10px;
   }
   h1{
     font-size: 60px;
@@ -175,7 +181,7 @@ body {
 header {   
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 2000;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -193,7 +199,7 @@ header {
   color:  rgb(51, 53, 56);
   width: auto;
   background-color:white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%); 
 }
 
 .buttonsub {
@@ -206,55 +212,47 @@ header {
   color:  white;
   width: auto;
   background-color:rgb(153, 153, 153);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%); 
 }
 
 @media (max-width: 500px) {
 .button {
-  top:100px;
-  font-size: 20px;
+  top:110px;
+  font-size: 14px;
   padding-top: 5px; 
   padding-left: 30px; 
   padding-right: 10px; 
   padding-bottom: 5px; 
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
 }
 
 
 .buttonsub {
-  top:129px;
-  font-size: 10px;
+  top:133px;
+  font-size: 11px;
   padding-top: 5px; 
   padding-left: 30px; 
   padding-right: 10px; 
   padding-bottom: 5px; 
-  border-top: 2px solid rgb(51, 53, 56);
-  border-bottom: 2px solid rgb(51, 53, 56);
 }
 
 }
 @media not (max-width: 500px) {
 .button {
-  top: 80px;
+  top: 105px;
   font-size: 40px;
   padding-top: 10px; 
-  padding-left: 75px; 
+  padding-left: 40px; 
   padding-right: 10px; 
   padding-bottom: 10px; 
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
 }
 
 .buttonsub {
-  top:134px;
+  top:155px;
   font-size: 20px;
-  padding-top: 10px; 
-  padding-left: 75px; 
+  padding-top: 17px; 
+  padding-left: 40px; 
   padding-right: 10px; 
   padding-bottom: 10px; 
-  border-top: 5px solid rgb(51, 53, 56);
-  border-bottom: 5px solid rgb(51, 53, 56);
 }
 
 }
@@ -271,7 +269,7 @@ header {
 .buttonsub {
   color:  rgb(51, 53, 56);
   background-color:white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%); 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%); 
   /*border-top: 5px solid white;
   border-bottom: 5px solid white;*/
 }
