@@ -7,17 +7,18 @@
   <main>
     <div class="text">
       <h1>Il y a une erreur sur une carte</h1>
-      <p>n'hesitez pas a me contacter sur mes réseaux ou mon mail si vous constatez une erreur sur une carte. Pour que je puisse les
-        corriger <a href="mailto:lmbtradingcards@gmail.com">lmbtradingcards@gmail.com</a></p>
+      <div>n'hesitez pas a me contacter sur mes réseaux ou mon mail si vous constatez une erreur sur une carte. Pour que
+        je puisse les
+        corriger <a href="mailto:lmbtradingcards@gmail.com">lmbtradingcards@gmail.com</a></div>
       <h1>Il manque des joueurs / La photo d'une carte n'est pas flatteuse </h1>
-      <p>
+      <div>
         Ces cartes ont été réalisé grâce au différentes photos prise lors de tournois.<br>
         Il manque beaucoup de personnes dû au manque de photo répondant aux critères permettant de réaliser une
         carte.<br>
         Si vous voulez m’aider à compléter cette collection vous pouvez m’envoyer les photos que vous avez ou même
         organiser un shooting avec votre équipe.<br>
         Si vous souhaitez faire ça voici les critères a respecter pour que je puisse utiliser ces photos :
-      </p>
+      </div>
       <div class="list">
         - Le joueur ou la joueuse en tenu officiel <br>
         - Rien devant le joueur ou la joueuse<br>
@@ -30,16 +31,17 @@
         - M'envoyer les photo sans compression et avec la qualité maximal, par exemple avec un lien de drive<br>
       </div>
       <h1>Combien ça coute</h1>
-      <p>
+      <div>
         Ce site, ainsi que les cartes physique que j’ai pu distribuer ont été réalisé avant tout pour le fun.<br>
         Mais, même si je n’aime pas monétiser mes projets, la production de tout cela coute cher (entre 2 et 3 euros par
         booster, et je pense en distribuer une centaine) et prend énormément de temps.<br>
         Aussi si vous souhaitez m’aider à continuer ou me soutenir pour mes prochains projets vous pouvez me donner
-        quelques euro, soit dans la vie, soit sur mon PayPal <a href="https://www.paypal.com/paypalme/flopynours/">paypal.com/paypalme/flopynours/</a> <br>
+        quelques euro, soit dans la vie, soit sur mon PayPal <a
+          href="https://www.paypal.com/paypalme/flopynours/">paypal.com/paypalme/flopynours/</a> <br>
         Merci à vous 😊
-      </p>
+      </div>
       <h1>Me contacter</h1>
-      <p><a href="mailto:lmbtradingcards@gmail.com">lmbtradingcards@gmail.com</a></p>
+      <div><a href="mailto:lmbtradingcards@gmail.com">lmbtradingcards@gmail.com</a></div>
     </div>
   </main>
   <footer>
@@ -77,9 +79,10 @@ export default {
 
 .text {
   padding: 30px;
+  display: block;
 
   div {
-
+    display: block;
     padding: 10px;
   }
 

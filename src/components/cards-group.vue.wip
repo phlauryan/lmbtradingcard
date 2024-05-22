@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, computed,defineEmits  } from 'vue'
 import Card from './card-elmt.vue'
+const emit = defineEmits(['childClickedG'])
 
 const props = defineProps({
   group: {
@@ -9,7 +10,11 @@ const props = defineProps({
   }
 })
 
-
+function handleChildClick(clientWidth, clientHeight,posx, posy,visu) {
+      console.log('Received from child:', clientWidth, clientHeight,posx, posy,visu);
+      // Appeler la fonction du parent avec les paramètres reçus
+      emit('childClickedG', clientWidth, clientHeight,posx, posy,visu);
+    }
 </script>
 
 <template>

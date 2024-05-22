@@ -8,12 +8,16 @@ let teams = [];
 let types = [];
 let par = ref("Par carte");
 let subpar = ref("Par équipe");
+const megacarteoriginalheight = ref("0");
+const megacarteVisibility = ref("hidden");
+const megacarteoriginalposx = ref("0px");
+const megacarteoriginalposy = ref("0px");
 _.forEach(cards, function (card) {
   teams.push(card.team);
   types.push(card.type);
 });
-teams = _.uniq(teams).sort();
-types = _.uniq(types).sort().reverse();
+teams = _.uniq(teams);
+types = _.uniq(types);
 let groupbyteam = [];
 _.forEach(teams, function (team) {
   groupbyteam.push({
@@ -43,6 +47,18 @@ function changeby() {
     groupstoshow.value = groupbyteam;
   }
 }
+const imgback = ref("./images/back.png");
+const imgvisu = ref("./images/back.png");
+const rotate = ref("0deg");
+function handleChildClickG(clientWidth, clientHeight, posx, posy,visu) {
+  megacarteoriginalheight.value = clientHeight + "px";
+  megacarteoriginalposx.value = posx + "px";
+  megacarteoriginalposy.value = posy + "px";
+  imgvisu.value=visu;
+  console.log(' moueif:', clientWidth, clientHeight, clientHeight + "px", posx, posy,visu);
+  megacarteVisibility.value = "visible";
+  rotate.value = "360deg";
+}
 
 
 </script>
@@ -56,8 +72,14 @@ function changeby() {
     <div class="buttonsub" @click="changeby">{{ subpar }}</div>
   </div>
   <main>
+    <div class="contenantmegacarte">
+      <div ref="divrotatemegacarte" class="rotatemegacarte">
+        <img class="cardmegacarte" :src="imgvisu" />
+        <img class="cardmegaback" :src="imgback" />
+      </div>
+    </div>
     <div class="group" v-for="grouptoshow in groupstoshow">
-      <cardsgroup :group="grouptoshow"/>
+      <cardsgroup :group="grouptoshow" @childClickedG="handleChildClickG" />
     </div>
   </main>
   <footer>
@@ -66,6 +88,76 @@ function changeby() {
 </template>
 
 <style>
+div.contenantmegacarte {
+
+  perspective: 800px;
+  transform-style: preserve-3d;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: v-bind('megacarteVisibility');
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: megaparitionCont;
+  animation-timing-function: ease-in-out;
+}
+.rotatemegacarte{
+  transition: transform 2s;
+  animation-timing-function: ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateY(v-bind('rotate'))
+}
+@keyframes megaparitionCont {
+  from {
+    top:  v-bind('megacarteoriginalposx');
+    left: v-bind('megacarteoriginalposy');
+  }
+
+  to {
+    top: 50%;
+    left: 50%;    
+   /* transform: translate(-50%, -50%);*/
+  }
+}
+.cardmegacarte, .cardmegaback {
+  position: absolute;  
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: megaparition;
+  animation-timing-function: ease-in-out;
+  height: v-bind('megacarteoriginalheight');
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+} 
+.cardmegaback {
+  transform: rotateY(180deg);
+}
+
+@keyframes megaparition {
+  from {
+  }
+
+  to {
+    height: 72vh;
+  }
+}
+
+/* 
+@media (max-width: 500px) {
+  .cardmegacarte {
+    width: 90vw;
+    padding-top: 11vh;
+  }
+}
+
+@media not (max-width: 500px) {
+  .cardmegacarte {
+    height: 72vh;
+    padding-top: 11vh;
+  }
+} */
 
 .booster {
   visibility: hidden;
@@ -242,10 +334,10 @@ header {
 
 
   .buttonsub {
-    top: 131px;
+    top: 133px;
     font-size: 11px;
     padding-top: 5px;
-    padding-left: 22px;
+    padding-left: 30px;
     padding-right: 10px;
     padding-bottom: 5px;
   }

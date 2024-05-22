@@ -14,6 +14,13 @@
         "lastname": "ravet"
     },
     {
+        "visu": "./images/cyclhop antoine albert holo.jpg",
+        "team": "cyclhop",
+        "type": "holo",
+        "firstname": "antoine",
+        "lastname": "albert"
+    },
+    {
         "visu": "./images/animafond pierre classic.png",
         "team": "animafond",
         "type": "classic",
@@ -152,6 +159,13 @@
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
+    },
+    {
+        "visu": "./images/vintage berkley jim.png",
+        "team": "berkeley revolution",
+        "type": "vintage",
+        "firstname": "jim",
+        "lastname": "sowers"
     },
     {
         "visu": "./images/casse rayons MELISSA SCHACH classic.png",
@@ -798,13 +812,6 @@
         "lastname": "lastname"
     },
     {
-        "visu": "./images/vintage berkley jim.png",
-        "team": "berkeley revolution",
-        "type": "vintage",
-        "firstname": "jim",
-        "lastname": "sowers"
-    },
-    {
         "visu": "./images/cyclas gab classic.png",
         "team": "cyclas",
         "type": "classic",
@@ -975,7 +982,7 @@
     {
         "visu": "./images/Vintage bertrand.jpg",
         "team": "aoc",
-        "type": "Vintage",
+        "type": "vintage",
         "firstname": "bertrand",
         "lastname": "bertrand"
     },
@@ -1083,12 +1090,5 @@
         "type": "holo",
         "firstname": "valentin",
         "lastname": "millet naas"
-    },
-    {
-        "visu": "./images/cyclhop antoine albert holo.jpg",
-        "team": "cyclhop",
-        "type": "holo",
-        "firstname": "antoine",
-        "lastname": "albert"
     }
 ]
