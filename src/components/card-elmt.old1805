@@ -1,10 +1,8 @@
 <script setup>
-import { ref,  reactive, computed,onUnmounted,defineEmits } from 'vue'
+import { ref,  reactive, computed,onUnmounted} from 'vue'
 //import { useOrientation } from './orientation.js'
 import TWEEN from '@tweenjs/tween.js';
 import { flip } from 'lodash';
-const emit = defineEmits(['childClicked'])
-
 const props = defineProps({
   carda: {
     type: Object,
@@ -123,13 +121,13 @@ const height = 470;
 const decalageMaxXDeg =15;
 const decalageMaxYDeg =20;
 
-const allVisibility = ref("visible");
+
 //flip visibility
 const frontVisibility = computed(() => {
-  return isflip.value  || allVisibility.value=="hidden"? "hidden":"visible";
+  return isflip.value? "hidden":"visible";
 })
 const backVisibility = computed(() => {
-  return isflip.value && allVisibility.value=="visible" ? "visible":"hidden";
+  return isflip.value? "visible":"hidden";
 })
 
 //rotateDeg -decalageMaxDeg to decalageMaxYDeg
@@ -175,11 +173,7 @@ if (!window.matchMedia("(hover: hover)").matches) {
 
 //au cliquue
 function ouaichclick(event){
-  const pos= event.target.getBoundingClientRect();
-  allVisibility.value = "hidden";
- emit('childClicked', event.target.clientWidth, event.target.clientHeight,pos.top, pos.left,visu);
-
-  /*if(!flipping.value){
+  if(!flipping.value){
     var tweenflip1 = new TWEEN.Tween(realrotatedeg.value)
     flipping.value=true
     tweenflip1.to({x:90}, 200).easing(TWEEN.Easing.Cubic.IN).onComplete(function (object) {
@@ -202,7 +196,7 @@ function ouaichclick(event){
       tweenflip2.start()
     })
     tweenflip1.start()
-  }*/
+  }
 }
 
 //mouvement de la carte fonction de la sourie
@@ -282,9 +276,6 @@ img {
   max-width: 300px;
 }
 
-.contenant{
-  visibility: v-bind('allVisibility');
-}
 
 .back{
   position: absolute;  

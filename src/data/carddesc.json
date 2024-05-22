@@ -40,7 +40,8 @@
         "type": "holo",
         "firstname": "thomas",
         "lastname": "ravet"
-    },{
+    },
+    {
         "visu": "./images/animafond valentin millet naas classic.jpg",
         "team": "animafond",
         "type": "classic",
@@ -963,5 +964,131 @@
         "type": "holo",
         "firstname": "Thierry",
         "lastname": "Dumonteil"
+    },
+    {
+        "visu": "./images/Vintage bobousse.jpg",
+        "team": "aoc",
+        "type": "vintage",
+        "firstname": "bobousse",
+        "lastname": "bobousse"
+    },
+    {
+        "visu": "./images/Vintage bertrand.jpg",
+        "team": "aoc",
+        "type": "Vintage",
+        "firstname": "bertrand",
+        "lastname": "bertrand"
+    },
+    {
+        "visu": "./images/rouletabille Tiphaine VALLANTIN holo.jpg",
+        "team": "rouletabille",
+        "type": "holo",
+        "firstname": "Tiphaine",
+        "lastname": "VALLANTIN"
+    },
+    {
+        "visu": "./images/rouletabille Tiphaine VALLANTIN classic.jpg",
+        "team": "rouletabille",
+        "type": "classic",
+        "firstname": "Tiphaine",
+        "lastname": "VALLANTIN"
+    },
+    {
+        "visu": "./images/rouletabille  francois wurmser holo.jpg",
+        "team": "rouletabille",
+        "type": "holo",
+        "firstname": "francois",
+        "lastname": "wurmser"
+    },
+    {
+        "visu": "./images/monogygote sebastien delas classic.jpg",
+        "team": "monogygote",
+        "type": "classic",
+        "firstname": "sebastien",
+        "lastname": "delas"
+    },
+    {
+        "visu": "./images/monogygote sebastien delas holo.jpg",
+        "team": "monogygote",
+        "type": "holo",
+        "firstname": "sebastien",
+        "lastname": "delas"
+    },
+    {
+        "visu": "./images/monogygote anthony seguin classic.jpg",
+        "team": "monogygote",
+        "type": "classic",
+        "firstname": "anthony",
+        "lastname": "seguin"
+    },
+    {
+        "visu": "./images/monogygote anthony seguin holo.jpg",
+        "team": "monogygote",
+        "type": "holo",
+        "firstname": "anthony",
+        "lastname": "seguin"
+    },
+    {
+        "visu": "./images/rouletabille  francois wurmser classic.jpg",
+        "team": "rouletabille",
+        "type": "classic",
+        "firstname": "francois",
+        "lastname": "wurmser"
+    },
+    {
+        "visu": "./images/cyclhop antoine albert classic.jpg",
+        "team": "cyclhop",
+        "type": "classic",
+        "firstname": "antoine",
+        "lastname": "albert"
+    },
+    {
+        "visu": "./images/animafond sebastien quetard classic.jpg",
+        "team": "animafond",
+        "type": "classic",
+        "firstname": "sebastien",
+        "lastname": "quetard"
+    },
+    {
+        "visu": "./images/animafond laurent descombes classic.jpg",
+        "team": "animafond",
+        "type": "classic",
+        "firstname": "laurent",
+        "lastname": "descombes"
+    },
+    {
+        "visu": "./images/animafond valentin millet naas 2 holo.jpg",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "valentin",
+        "lastname": "millet naas"
+    },
+    {
+        "visu": "./images/animafond laurent descombes holo.jpg",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "laurent",
+        "lastname": "descombes"
+    },
+    {
+        "visu": "./images/animafond sebastien quetard holo.jpg",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "sebastien",
+        "lastname": "quetard"
+    },
+    {
+        "visu": "./images/animafond valentin millet naas 2 classic.jpg",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "valentin",
+        "lastname": "millet naas"
+    },
+    {
+        "visu": "./images/cyclhop antoine albert holo.jpg",
+        "team": "cyclhop",
+        "type": "holo",
+        "firstname": "antoine",
+        "lastname": "albert"
     }
 ]

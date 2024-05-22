@@ -35,7 +35,7 @@
         Mais, même si je n’aime pas monétiser mes projets, la production de tout cela coute cher (entre 2 et 3 euros par
         booster, et je pense en distribuer une centaine) et prend énormément de temps.<br>
         Aussi si vous souhaitez m’aider à continuer ou me soutenir pour mes prochains projets vous pouvez me donner
-        quelques euro, soit dans la vie, soit sur mon PayPal https://www.paypal.com/paypalme/flopynours/ <br>
+        quelques euro, soit dans la vie, soit sur mon PayPal <a href="https://www.paypal.com/paypalme/flopynours/">paypal.com/paypalme/flopynours/</a> <br>
         Merci à vous 😊
       </p>
       <h1>Me contacter</h1>
