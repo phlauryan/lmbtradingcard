@@ -1090,5 +1090,65 @@
         "type": "holo",
         "firstname": "valentin",
         "lastname": "millet naas"
+    },
+    {
+        "visu": "./images/cyclas yann henry 2 holo.png",
+        "team": "cyclas",
+        "type": "holo",
+        "firstname": "yann",
+        "lastname": "henry"
+    },
+    {
+        "visu": "./images/cyclas yann henry 2 holo.png",
+        "team": "cyclas",
+        "type": "classic",
+        "firstname": "yann",
+        "lastname": "henry"
+    },
+    {
+        "visu": "./images/troubadours Gabriel Pompa Valdez classic.png",
+        "team": "troubadours",
+        "type": "classic",
+        "firstname": "Gabriel",
+        "lastname": "Pompa Valdez"
+    },
+    {
+        "visu": "./images/troubadours Gabriel Pompa Valdez holo.png",
+        "team": "troubadours",
+        "type": "holo",
+        "firstname": "Gabriel",
+        "lastname": "Pompa Valdez"
+    },
+    {
+        "visu": "./images/troubadours Jeromine Grandjean classic.png",
+        "team": "troubadours",
+        "type": "classic",
+        "firstname": "Jeromine",
+        "lastname": "Grandjean"
+    },
+    {
+        "visu": "./images/troubadours Jeromine Grandjean holo.png",
+        "team": "troubadours",
+        "type": "holo",
+        "firstname": "Jeromine",
+        "lastname": "Grandjean"
+    },
+    {
+        "visu": "./images/troubadours Marion RUHLMANN classic.png",
+        "team": "troubadours",
+        "type": "classic",
+        "firstname": "Marion",
+        "lastname": "RUHLMANN"
+    },
+    {
+        "visu": "./images/troubadours Marion RUHLMANN holo.png",
+        "team": "troubadours",
+        "type": "holo",
+        "firstname": "Marion",
+        "lastname": "RUHLMANN"
     }
 ]
+
+
+
+
