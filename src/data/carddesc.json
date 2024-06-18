@@ -1146,6 +1146,20 @@
         "type": "holo",
         "firstname": "Marion",
         "lastname": "RUHLMANN"
+    },
+    {
+        "visu": "./images/animafond Melchior Trela holo.png",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "Melchior",
+        "lastname": "Trela"
+    },
+    {
+        "visu": "./images/animafond Melchior Trela classic.png",
+        "team": "animafond",
+        "type": "classic",
+        "firstname": "Melchior",
+        "lastname": "Trela"
     }
 ]
 
