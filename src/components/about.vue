@@ -32,7 +32,7 @@
       <h1>Combien ça coute</h1>
       <div>
         Ce site, ainsi que les cartes physiques que j’ai pu distribuer ont été réalisés avant tout pour le fun.<br>
-        Mais, même si je n’aime pas monétiser mes projets, la production de tout cela coûte cher (entre 2 et 3 euros par
+        Mais, même si je n’aime pas monétiser mes projets, la production de tout cela coûte cher (entre 4 et 5 euros par
         booster, et je pense en distribuer une centaine) et prend énormément de temps.<br>
         Aussi, si vous souhaitez m’aider à continuer ou me soutenir pour mes prochains projets, vous pouvez me donner
         quelques euros, soit dans la vie, soit sur mon PayPal : <a

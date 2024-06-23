@@ -1188,5 +1188,19 @@
         "type": "holo",
         "firstname": "Nicolas",
         "lastname": "GAGNAIRE"
+    },
+    {
+        "visu": "./images/cyclas coach.png",
+        "team": "cyclas",
+        "type": "coach",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/troubadours coach.png",
+        "team": "troubadours",
+        "type": "coach",
+        "firstname": "firstname",
+        "lastname": "lastname"
     }
 ]
