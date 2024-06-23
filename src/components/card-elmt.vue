@@ -109,7 +109,7 @@ const realrotatedeg=ref({x:0,y:0});
 const isflip=ref(false)
 const flipping=ref(false)
 const imgback ="./images/back.png"
-
+const imgnoir ="./images/noir.png"
 const visu = props.carda.visu;
 const holo = props.carda.type === "holo" ||props.carda.type === "auto";
 
@@ -306,7 +306,7 @@ onUnmounted(()=>{
   width: 100%;
   aspect-ratio: .714;
   mix-blend-mode: color-dodge;
-  background-image: url("./images/noir.png"),
+  background-image: url("../images/noir.png"),
    repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space)* 1), rgba(255, 237, 95, 1) calc(var(--space)* 2), rgba(168, 255, 95, 1) calc(var(--space)* 3), rgba(131, 255, 247, 1) calc(var(--space)* 4), rgba(120, 148, 255, 1) calc(var(--space)* 5), rgb(216, 117, 255) calc(var(--space)* 6), rgb(255, 119, 115) calc(var(--space)* 7)),
    repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%),
    radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 20%, rgba(0, 0, 0, .25) 120%);
