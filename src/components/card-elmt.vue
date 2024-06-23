@@ -111,7 +111,7 @@ const flipping=ref(false)
 const imgback ="./images/back.png"
 const imgnoir ="./images/noir.png"
 const visu = props.carda.visu;
-const holo = props.carda.type === "holo" ||props.carda.type === "auto" ||props.carda.type === "coach gold"||props.carda.type === "legend";
+const holo = props.carda.type === "holo" ||props.carda.type === "auto" ||props.carda.type === "coach gold" ||props.carda.type === "legend";
 
 //a rendre dynamique ?
 const width = 340;
