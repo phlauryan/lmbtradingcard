@@ -151,11 +151,11 @@ group {
 
   main {
     h1 {
-      text-align: center;
+      text-align: left;
     }
 
     div {
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 }
@@ -184,7 +184,7 @@ group {
     }
 
     div {
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 }
