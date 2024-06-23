@@ -1160,9 +1160,19 @@
         "type": "classic",
         "firstname": "Melchior",
         "lastname": "Trela"
+    },
+    {
+        "visu": "./images/flip flap Sylvain Declercq classic.png",
+        "team": "flip flap",
+        "type": "classic",
+        "firstname": "Sylvain",
+        "lastname": "Declercq"
+    },
+    {
+        "visu": "./images/flip flap Sylvain Declercq holo.png",
+        "team": "flip flap",
+        "type": "holo",
+        "firstname": "Sylvain",
+        "lastname": "Declercq"
     }
 ]
-
-
-
-

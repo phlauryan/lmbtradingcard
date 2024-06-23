@@ -272,10 +272,17 @@ onUnmounted(()=>{
 
 <style scoped>
 
-img {
-  max-width: 300px;
+@media not (max-width: 500px) {
+  img {
+    max-width: 300px;
+  }
 }
 
+@media (max-width: 500px) {
+  img {
+    max-width: 150px;
+  }
+}
 
 .back{
   position: absolute;  
