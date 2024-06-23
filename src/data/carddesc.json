@@ -1202,5 +1202,19 @@
         "type": "coach",
         "firstname": "firstname",
         "lastname": "lastname"
+    },
+    {
+        "visu": "./images/cyclas coach gold.png",
+        "team": "cyclas",
+        "type": "coach gold",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/troubadours coach gold.png",
+        "team": "troubadours",
+        "type": "coach gold",
+        "firstname": "firstname",
+        "lastname": "lastname"
     }
 ]
