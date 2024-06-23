@@ -1174,5 +1174,19 @@
         "type": "holo",
         "firstname": "Sylvain",
         "lastname": "Declercq"
+    },
+    {
+        "visu": "./images/monogre Nicolas GAGNAIRE classic.png",
+        "team": "monogre",
+        "type": "classic",
+        "firstname": "Nicolas",
+        "lastname": "GAGNAIRE"
+    },
+    {
+        "visu": "./images/monogre Nicolas GAGNAIRE holo.png",
+        "team": "monogre",
+        "type": "holo",
+        "firstname": "Nicolas",
+        "lastname": "GAGNAIRE"
     }
 ]
