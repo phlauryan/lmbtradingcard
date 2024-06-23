@@ -184,7 +184,7 @@ group {
     }
 
     div {
-      justify-content: space-between;
+      justify-content: flex-start;
     }
   }
 }
