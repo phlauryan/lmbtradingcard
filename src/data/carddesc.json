@@ -691,14 +691,14 @@
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
-    },
+    },,
     {
         "visu": "./images/woom nene classic.png",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
-    },
+    }
     {
         "visu": "./images/woom nene holo.png",
         "team": "woom",
@@ -1216,5 +1216,12 @@
         "type": "coach gold",
         "firstname": "firstname",
         "lastname": "lastname"
+    },
+    {
+        "visu": "./images/woom nene legend gold.png",
+        "team": "woom",
+        "type": "legend",
+        "firstname": "olivier",
+        "lastname": "dupre"
     }
 ]
