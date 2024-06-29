@@ -1223,5 +1223,12 @@
         "type": "legend",
         "firstname": "olivier",
         "lastname": "dupre"
+    },
+    {
+        "visu": "./images/Vintage adrien lichtfouse.png",
+        "team": "woom",
+        "type": "vintage",
+        "firstname": "adrien",
+        "lastname": "lichtfouse"
     }
 ]
