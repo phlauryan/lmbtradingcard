@@ -770,14 +770,14 @@
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom seb blanc classic.png",
+        "visu": "./images/woom seb classic.png",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom seb blanc holo.png",
+        "visu": "./images/woom seb holo.png",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
