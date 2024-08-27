@@ -39,6 +39,16 @@
           href="https://www.paypal.com/paypalme/flopynours/">paypal.com/paypalme/flopynours/</a> <br>
         Merci à vous 😊
       </div>
+      <h1>Crédits photos</h1>
+      <div>
+        Les photos des cartes viennent des sources suivantes : 
+        - <a href="https://www.flickr.com/photos/100335061@N05/">Romain GADIOLET</a>
+        - <a href="https://photos.google.com/share/AF1QipNJJtsEgcwDVmlfUhTK3s6dItfU18PJzbxsrCZaYuo_iMs-p2Jnx29dGkMiGiwnjg?key=djFQM1c3LXNlV1paZTE2UVdBaDhBM2x0WU5iXzNB">Thomas Hoeser</a>
+        - <a href="https://www.flickr.com/photos/194291261@N05/albums/72157720103752648/">Loïc OTTMAN</a>
+        - <a href="https://xavierlq.myportfolio.com/monocycle">Xavier LEQUESNE</a>
+        - Les photos de la CNM
+        - Mes photos perso
+      </div>
       <h1>Me contacter</h1>
       <div><a href="mailto:lmbtradingcards@gmail.com">lmbtradingcards@gmail.com</a></div>
     </div>
