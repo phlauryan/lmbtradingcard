@@ -1230,5 +1230,33 @@
         "type": "vintage",
         "firstname": "adrien",
         "lastname": "lichtfouse"
+    },
+    {
+        "visu": "./images/woom Geraud auto.png",
+        "team": "woom",
+        "type": "auto",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/cyclas nat auto.png",
+        "team": "cyclas",
+        "type": "auto",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/cyclas gab auto.png",
+        "team": "cyclas",
+        "type": "auto",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/cyclas jerem auto.png",
+        "team": "cyclas",
+        "type": "auto",
+        "firstname": "firstname",
+        "lastname": "lastname"
     }
 ]
