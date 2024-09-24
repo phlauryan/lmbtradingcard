@@ -343,14 +343,14 @@
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap baptiste classic.png",
+        "visu": "./images/flip flap baptiste chapuis classic.png",
         "team": "flip flap",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap baptiste holo.png",
+        "visu": "./images/flip flap baptiste chapuis holo.png",
         "team": "flip flap",
         "type": "holo",
         "firstname": "firstname",
@@ -1050,14 +1050,14 @@
         "lastname": "albert"
     },
     {
-        "visu": "./images/animafond sebastien quetard classic.jpg",
+        "visu": "./images/animafond sebastien quetard classic.png",
         "team": "animafond",
         "type": "classic",
         "firstname": "sebastien",
         "lastname": "quetard"
     },
     {
-        "visu": "./images/animafond laurent descombes classic.jpg",
+        "visu": "./images/animafond laurent descombes classic.png",
         "team": "animafond",
         "type": "classic",
         "firstname": "laurent",
@@ -1071,14 +1071,14 @@
         "lastname": "millet naas"
     },
     {
-        "visu": "./images/animafond laurent descombes holo.jpg",
+        "visu": "./images/animafond laurent descombes holo.png",
         "team": "animafond",
         "type": "holo",
         "firstname": "laurent",
         "lastname": "descombes"
     },
     {
-        "visu": "./images/animafond sebastien quetard holo.jpg",
+        "visu": "./images/animafond sebastien quetard holo.png",
         "team": "animafond",
         "type": "holo",
         "firstname": "sebastien",
@@ -1258,5 +1258,73 @@
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
+    },
+    {
+        "visu": "./images/flip flap Noémie Keskin classic",
+        "team": "flip flap",
+        "type": "classic",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/flip flap Noémie Keskin holo.png",
+        "team": "flip flap",
+        "type": "holo",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/flip flap Sarah Marx classic.png",
+        "team": "flip flap",
+        "type": "classic",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/flip flap Sarah Marx holo.png",
+        "team": "flip flap",
+        "type": "holo",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/flip flap themis hug classic.png",
+        "team": "flip flap",
+        "type": "classic",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },
+    {
+        "visu": "./images/flip flap themis hug holo.png",
+        "team": "flip flap",
+        "type": "holo",
+        "firstname": "firstname",
+        "lastname": "lastname"
+    },{
+        "visu": "./images/animafond alexandre berger classic.png",
+        "team": "animafond",
+        "type": "classic",
+        "firstname": "cyril",
+        "lastname": "ravet"
+    },
+    {
+        "visu": "./images/animafond alexandre berger holo.png",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "cyril",
+        "lastname": "ravet"
+    },{
+        "visu": "./images/animafond jean marie classic.png",
+        "team": "animafond",
+        "type": "classic",
+        "firstname": "cyril",
+        "lastname": "ravet"
+    },
+    {
+        "visu": "./images/animafond jean marie holo.png",
+        "team": "animafond",
+        "type": "holo",
+        "firstname": "cyril",
+        "lastname": "ravet"
     }
 ]
