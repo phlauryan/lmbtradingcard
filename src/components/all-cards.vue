@@ -3,7 +3,7 @@ import cardsgroup from './cards-group.vue'
 import cards from '../data/carddesc.json'
 import _ from 'lodash';
 import { ref } from 'vue'
-import logo from '../images/logo.jpg'
+import logo from '../images/logo.png'
 let teams = [];
 let types = [];
 let par = ref("Par carte");
