@@ -1,13 +1,13 @@
 [
     {
-        "visu": "./images/animafond cyril classic.png",
+        "visu": "./images/animafond cyril classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "cyril",
         "lastname": "ravet"
     },
     {
-        "visu": "./images/animafond cyril holo.png",
+        "visu": "./images/animafond cyril holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "cyril",
@@ -21,28 +21,28 @@
         "lastname": "albert"
     },
     {
-        "visu": "./images/animafond pierre classic.png",
+        "visu": "./images/animafond pierre classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "pierre",
         "lastname": "berger"
     },
     {
-        "visu": "./images/animafond pierre holo.png",
+        "visu": "./images/animafond pierre holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "pierre",
         "lastname": "berger"
     },
     {
-        "visu": "./images/animafond thomas classic.png",
+        "visu": "./images/animafond thomas classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "thomas",
         "lastname": "ravet"
     },
     {
-        "visu": "./images/animafond thomas holo.png",
+        "visu": "./images/animafond thomas holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "thomas",
@@ -63,728 +63,728 @@
         "lastname": "ravet"
     },
     {
-        "visu": "./images/bam eric classic.png",
+        "visu": "./images/bam eric classic.jpg",
         "team": "bam",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/bam eric holo.png",
+        "visu": "./images/bam eric holo.jpg",
         "team": "bam",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/calfrico jim classic.png",
+        "visu": "./images/calfrico jim classic.jpg",
         "team": "calfrico",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/calfrico jim holo.png",
+        "visu": "./images/calfrico jim holo.jpg",
         "team": "calfrico",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/calfrico lance holo.png",
+        "visu": "./images/calfrico lance holo.jpg",
         "team": "calfrico",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/calfrico lance print.png",
+        "visu": "./images/calfrico lance print.jpg",
         "team": "calfrico",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/calfrico marco classic.png",
+        "visu": "./images/calfrico marco classic.jpg",
         "team": "calfrico",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/calfrico marco holo.png",
+        "visu": "./images/calfrico marco holo.jpg",
         "team": "calfrico",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/casse rayons damaris caire classic.png",
+        "visu": "./images/casse rayons damaris caire classic.jpg",
         "team": "casse rayons",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/casse rayons damaris caire holo.png",
+        "visu": "./images/casse rayons damaris caire holo.jpg",
         "team": "casse rayons",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/casse rayons jun king classic.png",
+        "visu": "./images/casse rayons jun king classic.jpg",
         "team": "casse rayons",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/casse rayons jun king holo.png",
+        "visu": "./images/casse rayons jun king holo.jpg",
         "team": "casse rayons",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/casse rayons Kiran Cottin classic.png",
+        "visu": "./images/casse rayons Kiran Cottin classic.jpg",
         "team": "casse rayons",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/casse rayons Kiran Cottin holo.png",
+        "visu": "./images/casse rayons Kiran Cottin holo.jpg",
         "team": "casse rayons",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/vintage berkley jim.png",
+        "visu": "./images/vintage berkley jim.jpg",
         "team": "berkeley revolution",
         "type": "vintage",
         "firstname": "jim",
         "lastname": "sowers"
     },
     {
-        "visu": "./images/casse rayons MELISSA SCHACH classic.png",
+        "visu": "./images/casse rayons MELISSA SCHACH classic.jpg",
         "team": "casse rayons",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/casse rayons MELISSA SCHACH holo.png",
+        "visu": "./images/casse rayons MELISSA SCHACH holo.jpg",
         "team": "casse rayons",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas adrien auto.png",
+        "visu": "./images/cyclas adrien auto.jpg",
         "team": "cyclas",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas adrien classic.png",
+        "visu": "./images/cyclas adrien classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas adrien holo.png",
+        "visu": "./images/cyclas adrien holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas nat classic.png",
+        "visu": "./images/cyclas nat classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "nathanael",
         "lastname": "bogdan"
     },
     {
-        "visu": "./images/cyclas nat holo.png",
+        "visu": "./images/cyclas nat holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "nathanael",
         "lastname": "bogdan"
     },
     {
-        "visu": "./images/cyclas amos classic.png",
+        "visu": "./images/cyclas amos classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas amos holo.png",
+        "visu": "./images/cyclas amos holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas coco auto.png",
+        "visu": "./images/cyclas coco auto.jpg",
         "team": "cyclas",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas coco classic.png",
+        "visu": "./images/cyclas coco classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas coco holo.png",
+        "visu": "./images/cyclas coco holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas jerem classic.png",
+        "visu": "./images/cyclas jerem classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas jerem holo.png",
+        "visu": "./images/cyclas jerem holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas jerem2 classic.png",
+        "visu": "./images/cyclas jerem2 classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas jerem2 holo.png",
+        "visu": "./images/cyclas jerem2 holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas remi classic.png",
+        "visu": "./images/cyclas remi classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas remi holo.png",
+        "visu": "./images/cyclas remi holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas thomas auto.png",
+        "visu": "./images/cyclas thomas auto.jpg",
         "team": "cyclas",
         "type": "auto",
         "thomas": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas thomas classic.png",
+        "visu": "./images/cyclas thomas classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "thomas": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas thomas holo.png",
+        "visu": "./images/cyclas thomas holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "thomas": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas yann henry classic.png",
+        "visu": "./images/cyclas yann henry classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas yann henry holo.png",
+        "visu": "./images/cyclas yann henry holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclone Elyott classic.png",
+        "visu": "./images/cyclone Elyott classic.jpg",
         "team": "cyclone",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclone Elyott holo.png",
+        "visu": "./images/cyclone Elyott holo.jpg",
         "team": "cyclone",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap baptiste chapuis classic.png",
+        "visu": "./images/flip flap baptiste chapuis classic.jpg",
         "team": "flip flap",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap baptiste chapuis holo.png",
+        "visu": "./images/flip flap baptiste chapuis holo.jpg",
         "team": "flip flap",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap theo classic.png",
+        "visu": "./images/flip flap theo classic.jpg",
         "team": "flip flap",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap theo holo.png",
+        "visu": "./images/flip flap theo holo.jpg",
         "team": "flip flap",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monogre Sylvain GOBRON classic.png",
+        "visu": "./images/monogre Sylvain GOBRON classic.jpg",
         "team": "monogre",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monogre Sylvain GOBRON holo.png",
+        "visu": "./images/monogre Sylvain GOBRON holo.jpg",
         "team": "monogre",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monogygote David Ilcinkas classic.png",
+        "visu": "./images/monogygote David Ilcinkas classic.jpg",
         "team": "monogygote",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monogygote David Ilcinkas holo.png",
+        "visu": "./images/monogygote David Ilcinkas holo.jpg",
         "team": "monogygote",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monostars Adrien Grosay classic.png",
+        "visu": "./images/monostars Adrien Grosay classic.jpg",
         "team": "monostars",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monostars Adrien Grosay holo.png",
+        "visu": "./images/monostars Adrien Grosay holo.jpg",
         "team": "monostars",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monostars Alexis AVENEL classic.png",
+        "visu": "./images/monostars Alexis AVENEL classic.jpg",
         "team": "monostars",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monostars Alexis AVENEL holo.png",
+        "visu": "./images/monostars Alexis AVENEL holo.jpg",
         "team": "monostars",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monostars Vincent Briot classic.png",
+        "visu": "./images/monostars Vincent Briot classic.jpg",
         "team": "monostars",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/monostars Vincent Briot holo.png",
+        "visu": "./images/monostars Vincent Briot holo.jpg",
         "team": "monostars",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/rouletabille  Vincent de Carné-Carnavalet classic.png",
+        "visu": "./images/rouletabille  Vincent de Carné-Carnavalet classic.jpg",
         "team": "rouletabille",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/rouletabille  Vincent de Carné-Carnavalet holo.png",
+        "visu": "./images/rouletabille  Vincent de Carné-Carnavalet holo.jpg",
         "team": "rouletabille",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/troubadours Aurore MOTSCH classic.png",
+        "visu": "./images/troubadours Aurore MOTSCH classic.jpg",
         "team": "troubadours",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/troubadours Aurore MOTSCH holo.png",
+        "visu": "./images/troubadours Aurore MOTSCH holo.jpg",
         "team": "troubadours",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/troubadours loic faullimmel classic.png",
+        "visu": "./images/troubadours loic faullimmel classic.jpg",
         "team": "troubadours",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/troubadours loic faullimmel holo.png",
+        "visu": "./images/troubadours loic faullimmel holo.jpg",
         "team": "troubadours",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/troubadours Valentine STOEHR classic.png",
+        "visu": "./images/troubadours Valentine STOEHR classic.jpg",
         "team": "troubadours",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/troubadours Valentine STOEHR holo.png",
+        "visu": "./images/troubadours Valentine STOEHR holo.jpg",
         "team": "troubadours",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage Aidan Hanet.png",
+        "visu": "./images/Vintage Aidan Hanet.jpg",
         "team": "wheel frite",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage bareto.png",
+        "visu": "./images/Vintage bareto.jpg",
         "team": "portorico all stars",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage eric.png",
+        "visu": "./images/Vintage eric.jpg",
         "team": "aoc",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage franck.png",
+        "visu": "./images/Vintage franck.jpg",
         "team": "aoc",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage jojo.png",
+        "visu": "./images/Vintage jojo.jpg",
         "team": "aoc",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage Julien.png",
+        "visu": "./images/Vintage Julien.jpg",
         "team": "monogygote",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage kyle campbell.png",
+        "visu": "./images/Vintage kyle campbell.jpg",
         "team": "slo ballerz",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage Olivier TEMPEREAU 2.png",
+        "visu": "./images/Vintage Olivier TEMPEREAU 2.jpg",
         "team": "aoc",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage Olivier TEMPEREAU.png",
+        "visu": "./images/Vintage Olivier TEMPEREAU.jpg",
         "team": "monogygote",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage seb toll.png",
+        "visu": "./images/Vintage seb toll.jpg",
         "team": "wheel frite",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/Vintage tieri.png",
+        "visu": "./images/Vintage tieri.jpg",
         "team": "aoc",
         "type": "vintage",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom damien classic.png",
+        "visu": "./images/woom damien classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom damien holo.png",
+        "visu": "./images/woom damien holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom Emilien auto.png",
+        "visu": "./images/woom Emilien auto.jpg",
         "team": "woom",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom emilien classic.png",
+        "visu": "./images/woom emilien classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom emilien holo.png",
+        "visu": "./images/woom emilien holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom florian classic.png",
+        "visu": "./images/woom florian classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom florian holo.png",
+        "visu": "./images/woom florian holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom geraud classic.png",
+        "visu": "./images/woom geraud classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom geraud holo.png",
+        "visu": "./images/woom geraud holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom Julien auto.png",
+        "visu": "./images/woom Julien auto.jpg",
         "team": "woom",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom julien classiv.png",
+        "visu": "./images/woom julien classiv.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom julien holo.png",
+        "visu": "./images/woom julien holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom mathieux classic.png",
+        "visu": "./images/woom mathieux classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom mathieux holo.png",
+        "visu": "./images/woom mathieux holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom Maureen auto.png",
+        "visu": "./images/woom Maureen auto.jpg",
         "team": "woom",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom Maureen classic.png",
+        "visu": "./images/woom Maureen classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom Maureen holo.png",
+        "visu": "./images/woom Maureen holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom nene classic.png",
+        "visu": "./images/woom nene classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom nene holo.png",
+        "visu": "./images/woom nene holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom nico classic.png",
+        "visu": "./images/woom nico classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom nico holo.png",
+        "visu": "./images/woom nico holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom pg auto.png",
+        "visu": "./images/woom pg auto.jpg",
         "team": "woom",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom pg classic.png",
+        "visu": "./images/woom pg classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom pg holo.png",
+        "visu": "./images/woom pg holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom romain auto.png",
+        "visu": "./images/woom romain auto.jpg",
         "team": "woom",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom romain classic.png",
+        "visu": "./images/woom romain classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom romain holo.png",
+        "visu": "./images/woom romain holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom seb auto.png",
+        "visu": "./images/woom seb auto.jpg",
         "team": "woom",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom seb classic.png",
+        "visu": "./images/woom seb classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom seb holo.png",
+        "visu": "./images/woom seb holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom Vintage cedric mousset.png",
+        "visu": "./images/woom Vintage cedric mousset.jpg",
         "team": "woom",
         "type": "vintage",
         "firstname": "firstname",
@@ -798,175 +798,175 @@
         "lastname": "Boros"
     },
     {
-        "visu": "./images/woom zadig classic.png",
+        "visu": "./images/woom zadig classic.jpg",
         "team": "woom",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom zadig holo.png",
+        "visu": "./images/woom zadig holo.jpg",
         "team": "woom",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas gab classic.png",
+        "visu": "./images/cyclas gab classic.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "gabriel",
         "lastname": "berset"
     },
     {
-        "visu": "./images/cyclas gab holo.png",
+        "visu": "./images/cyclas gab holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "gabriel",
         "lastname": "berset"
     },
     {
-        "visu": "./images/troubadours benoit plumere classic.png",
+        "visu": "./images/troubadours benoit plumere classic.jpg",
         "team": "troubadours",
         "type": "classic",
         "firstname": "benoit",
         "lastname": "plumeret"
     },
     {
-        "visu": "./images/troubadours benoit plumere holo.png",
+        "visu": "./images/troubadours benoit plumere holo.jpg",
         "team": "troubadours",
         "type": "holo",
         "firstname": "benoit",
         "lastname": "plumeret"
     },
     {
-        "visu": "./images/bam bertrand classic.png",
+        "visu": "./images/bam bertrand classic.jpg",
         "team": "bam",
         "type": "classic",
         "firstname": "bertrand",
         "lastname": "bordonado"
     },
     {
-        "visu": "./images/bam bertrand holo.png",
+        "visu": "./images/bam bertrand holo.jpg",
         "team": "bam",
         "type": "holo",
         "firstname": "bertrand",
         "lastname": "bordonado"
     },
     {
-        "visu": "./images/Vintage franck chovelon.png",
+        "visu": "./images/Vintage franck chovelon.jpg",
         "team": "woom",
         "type": "vintage",
         "firstname": "franck",
         "lastname": "chovelon"
     },
     {
-        "visu": "./images/animafond marin classic.png",
+        "visu": "./images/animafond marin classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "marin",
         "lastname": "michaud"
     },
     {
-        "visu": "./images/animafond marin holo.png",
+        "visu": "./images/animafond marin holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "marin",
         "lastname": "michaud"
     },
     {
-        "visu": "./images/monogygote benjamin perreau classic.png",
+        "visu": "./images/monogygote benjamin perreau classic.jpg",
         "team": "monogygote",
         "type": "classic",
         "firstname": "benjamin",
         "lastname": "perreau"
     },
     {
-        "visu": "./images/monogygote benjamin perreau holo.png",
+        "visu": "./images/monogygote benjamin perreau holo.jpg",
         "team": "monogygote",
         "type": "holo",
         "firstname": "benjamin",
         "lastname": "perreau"
     },
     {
-        "visu": "./images/troubadours Valentin Klepper classic.png",
+        "visu": "./images/troubadours Valentin Klepper classic.jpg",
         "team": "troubadours",
         "type": "classic",
         "firstname": "Valentin",
         "lastname": "Klepper"
     },
     {
-        "visu": "./images/troubadours Valentin Klepper holo.png",
+        "visu": "./images/troubadours Valentin Klepper holo.jpg",
         "team": "troubadours",
         "type": "holo",
         "firstname": "Valentin",
         "lastname": "Klepper"
     },
     {
-        "visu": "./images/monogygote Quentin Monard classic.png",
+        "visu": "./images/monogygote Quentin Monard classic.jpg",
         "team": "monogygote",
         "type": "classic",
         "firstname": "Quentin",
         "lastname": "Monard"
     },
     {
-        "visu": "./images/monogygote Quentin Monard holo.png",
+        "visu": "./images/monogygote Quentin Monard holo.jpg",
         "team": "monogygote",
         "type": "holo",
         "firstname": "Quentin",
         "lastname": "Monard"
     },
     {
-        "visu": "./images/monogygote Freddy Livet classic.png",
+        "visu": "./images/monogygote Freddy Livet classic.jpg",
         "team": "monogygote",
         "type": "classic",
         "firstname": "Freddy",
         "lastname": "Livet"
     },
     {
-        "visu": "./images/monogygote Freddy Livet holo.png",
+        "visu": "./images/monogygote Freddy Livet holo.jpg",
         "team": "monogygote",
         "type": "holo",
         "firstname": "Freddy",
         "lastname": "Livet"
     },
     {
-        "visu": "./images/Vintage Karim kammah.png",
+        "visu": "./images/Vintage Karim kammah.jpg",
         "team": "monogygote",
         "type": "vintage",
         "firstname": "Karim",
         "lastname": "kammah"
     },
     {
-        "visu": "./images/monostars Martin chaton rault classic.png",
+        "visu": "./images/monostars Martin chaton rault classic.jpg",
         "team": "monostars",
         "type": "classic",
         "firstname": "Antoine",
         "lastname": "rault"
     },
     {
-        "visu": "./images/monostars Martin Chaton Rault holo.png",
+        "visu": "./images/monostars Martin Chaton Rault holo.jpg",
         "team": "monostars",
         "type": "holo",
         "firstname": "Antoine",
         "lastname": "rault"
     },
     {
-        "visu": "./images/Vintage Wa Lee Salas.png",
+        "visu": "./images/Vintage Wa Lee Salas.jpg",
         "team": "portorico all stars",
         "type": "vintage",
         "firstname": "Wa Lee",
         "lastname": "Salas"
     },
     {
-        "visu": "./images/monogre Thierry Dumonteil classic.png",
+        "visu": "./images/monogre Thierry Dumonteil classic.jpg",
         "team": "monogre",
         "type": "classic",
         "firstname": "Thierry",
         "lastname": "Dumonteil"
     },
     {
-        "visu": "./images/monogre Thierry Dumonteil holo.png",
+        "visu": "./images/monogre Thierry Dumonteil holo.jpg",
         "team": "monogre",
         "type": "holo",
         "firstname": "Thierry",
@@ -1050,14 +1050,14 @@
         "lastname": "albert"
     },
     {
-        "visu": "./images/animafond sebastien quetard classic.png",
+        "visu": "./images/animafond sebastien quetard classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "sebastien",
         "lastname": "quetard"
     },
     {
-        "visu": "./images/animafond laurent descombes classic.png",
+        "visu": "./images/animafond laurent descombes classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "laurent",
@@ -1071,14 +1071,14 @@
         "lastname": "millet naas"
     },
     {
-        "visu": "./images/animafond laurent descombes holo.png",
+        "visu": "./images/animafond laurent descombes holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "laurent",
         "lastname": "descombes"
     },
     {
-        "visu": "./images/animafond sebastien quetard holo.png",
+        "visu": "./images/animafond sebastien quetard holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "sebastien",
@@ -1092,236 +1092,236 @@
         "lastname": "millet naas"
     },
     {
-        "visu": "./images/cyclas yann henry 2 holo.png",
+        "visu": "./images/cyclas yann henry 2 holo.jpg",
         "team": "cyclas",
         "type": "holo",
         "firstname": "yann",
         "lastname": "henry"
     },
     {
-        "visu": "./images/cyclas yann henry 2 holo.png",
+        "visu": "./images/cyclas yann henry 2 holo.jpg",
         "team": "cyclas",
         "type": "classic",
         "firstname": "yann",
         "lastname": "henry"
     },
     {
-        "visu": "./images/troubadours Gabriel Pompa Valdez classic.png",
+        "visu": "./images/troubadours Gabriel Pompa Valdez classic.jpg",
         "team": "troubadours",
         "type": "classic",
         "firstname": "Gabriel",
         "lastname": "Pompa Valdez"
     },
     {
-        "visu": "./images/troubadours Gabriel Pompa Valdez holo.png",
+        "visu": "./images/troubadours Gabriel Pompa Valdez holo.jpg",
         "team": "troubadours",
         "type": "holo",
         "firstname": "Gabriel",
         "lastname": "Pompa Valdez"
     },
     {
-        "visu": "./images/troubadours Jeromine Grandjean classic.png",
+        "visu": "./images/troubadours Jeromine Grandjean classic.jpg",
         "team": "troubadours",
         "type": "classic",
         "firstname": "Jeromine",
         "lastname": "Grandjean"
     },
     {
-        "visu": "./images/troubadours Jeromine Grandjean holo.png",
+        "visu": "./images/troubadours Jeromine Grandjean holo.jpg",
         "team": "troubadours",
         "type": "holo",
         "firstname": "Jeromine",
         "lastname": "Grandjean"
     },
     {
-        "visu": "./images/troubadours Marion RUHLMANN classic.png",
+        "visu": "./images/troubadours Marion RUHLMANN classic.jpg",
         "team": "troubadours",
         "type": "classic",
         "firstname": "Marion",
         "lastname": "RUHLMANN"
     },
     {
-        "visu": "./images/troubadours Marion RUHLMANN holo.png",
+        "visu": "./images/troubadours Marion RUHLMANN holo.jpg",
         "team": "troubadours",
         "type": "holo",
         "firstname": "Marion",
         "lastname": "RUHLMANN"
     },
     {
-        "visu": "./images/animafond Melchior Trela holo.png",
+        "visu": "./images/animafond Melchior Trela holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "Melchior",
         "lastname": "Trela"
     },
     {
-        "visu": "./images/animafond Melchior Trela classic.png",
+        "visu": "./images/animafond Melchior Trela classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "Melchior",
         "lastname": "Trela"
     },
     {
-        "visu": "./images/flip flap Sylvain Declercq classic.png",
+        "visu": "./images/flip flap Sylvain Declercq classic.jpg",
         "team": "flip flap",
         "type": "classic",
         "firstname": "Sylvain",
         "lastname": "Declercq"
     },
     {
-        "visu": "./images/flip flap Sylvain Declercq holo.png",
+        "visu": "./images/flip flap Sylvain Declercq holo.jpg",
         "team": "flip flap",
         "type": "holo",
         "firstname": "Sylvain",
         "lastname": "Declercq"
     },
     {
-        "visu": "./images/monogre Nicolas GAGNAIRE classic.png",
+        "visu": "./images/monogre Nicolas GAGNAIRE classic.jpg",
         "team": "monogre",
         "type": "classic",
         "firstname": "Nicolas",
         "lastname": "GAGNAIRE"
     },
     {
-        "visu": "./images/monogre Nicolas GAGNAIRE holo.png",
+        "visu": "./images/monogre Nicolas GAGNAIRE holo.jpg",
         "team": "monogre",
         "type": "holo",
         "firstname": "Nicolas",
         "lastname": "GAGNAIRE"
     },
     {
-        "visu": "./images/cyclas coach.png",
+        "visu": "./images/cyclas coach.jpg",
         "team": "cyclas",
         "type": "coach",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/troubadours coach.png",
+        "visu": "./images/troubadours coach.jpg",
         "team": "troubadours",
         "type": "coach",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas coach gold.png",
+        "visu": "./images/cyclas coach gold.jpg",
         "team": "cyclas",
         "type": "coach gold",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/troubadours coach gold.png",
+        "visu": "./images/troubadours coach gold.jpg",
         "team": "troubadours",
         "type": "coach gold",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/woom nene legend gold.png",
+        "visu": "./images/woom nene legend gold.jpg",
         "team": "woom",
         "type": "legend",
         "firstname": "olivier",
         "lastname": "dupre"
     },
     {
-        "visu": "./images/Vintage adrien lichtfouse.png",
+        "visu": "./images/Vintage adrien lichtfouse.jpg",
         "team": "woom",
         "type": "vintage",
         "firstname": "adrien",
         "lastname": "lichtfouse"
     },
     {
-        "visu": "./images/woom Geraud auto.png",
+        "visu": "./images/woom Geraud auto.jpg",
         "team": "woom",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas nat auto.png",
+        "visu": "./images/cyclas nat auto.jpg",
         "team": "cyclas",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas gab auto.png",
+        "visu": "./images/cyclas gab auto.jpg",
         "team": "cyclas",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/cyclas jerem auto.png",
+        "visu": "./images/cyclas jerem auto.jpg",
         "team": "cyclas",
         "type": "auto",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap Noémie Keskin classic.png",
+        "visu": "./images/flip flap Noémie Keskin classic.jpg",
         "team": "flip flap",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap Noémie Keskin holo.png",
+        "visu": "./images/flip flap Noémie Keskin holo.jpg",
         "team": "flip flap",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap Sarah Marx classic.png",
+        "visu": "./images/flip flap Sarah Marx classic.jpg",
         "team": "flip flap",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap Sarah Marx holo.png",
+        "visu": "./images/flip flap Sarah Marx holo.jpg",
         "team": "flip flap",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap themis hug classic.png",
+        "visu": "./images/flip flap themis hug classic.jpg",
         "team": "flip flap",
         "type": "classic",
         "firstname": "firstname",
         "lastname": "lastname"
     },
     {
-        "visu": "./images/flip flap themis hug holo.png",
+        "visu": "./images/flip flap themis hug holo.jpg",
         "team": "flip flap",
         "type": "holo",
         "firstname": "firstname",
         "lastname": "lastname"
     },{
-        "visu": "./images/animafond alexandre berger classic.png",
+        "visu": "./images/animafond alexandre berger classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "cyril",
         "lastname": "ravet"
     },
     {
-        "visu": "./images/animafond alexandre berger holo.png",
+        "visu": "./images/animafond alexandre berger holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "cyril",
         "lastname": "ravet"
     },{
-        "visu": "./images/animafond jean marie classic.png",
+        "visu": "./images/animafond jean marie classic.jpg",
         "team": "animafond",
         "type": "classic",
         "firstname": "cyril",
         "lastname": "ravet"
     },
     {
-        "visu": "./images/animafond jean marie holo.png",
+        "visu": "./images/animafond jean marie holo.jpg",
         "team": "animafond",
         "type": "holo",
         "firstname": "cyril",
