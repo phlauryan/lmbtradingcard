@@ -2,7 +2,7 @@
 
 <template>
   <header>
-    <img class="logo" src="../images/logo.png">
+    <img class="logo" src="../images/logo.jpg">
   </header>
   <main>
     <div class="text">

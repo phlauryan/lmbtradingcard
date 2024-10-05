@@ -3,7 +3,7 @@ import cardsgroup from './cards-group.vue'
 import cards from '../data/carddesc.json'
 import _ from 'lodash';
 import { ref } from 'vue'
-import logo from '../images/logo.png'
+import logo from '../images/logo.jpg'
 let teams = [];
 let types = [];
 let par = ref("Par carte");
@@ -47,8 +47,8 @@ function changeby() {
     groupstoshow.value = groupbyteam;
   }
 }
-const imgback = ref("./images/back.png");
-const imgvisu = ref("./images/back.png");
+const imgback = ref("./images/back.jpg");
+const imgvisu = ref("./images/back.jpg");
 const rotate = ref("0deg");
 function handleChildClickG(clientWidth, clientHeight, posx, posy,visu) {
   megacarteoriginalheight.value = clientHeight + "px";
