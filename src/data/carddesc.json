@@ -1326,5 +1326,18 @@
         "type": "holo",
         "firstname": "cyril",
         "lastname": "ravet"
+    },{
+        "visu": "./images/troubadours Thibaut Paggin classic.png",
+        "team": "troubadours",
+        "type": "classic",
+        "firstname": "Thibaut",
+        "lastname": "Paggin"
+    },
+    {
+        "visu": "./images/troubadours Thibaut Paggin holo.png",
+        "team": "troubadours",
+        "type": "holo",
+        "firstname": "Thibaut",
+        "lastname": "Paggin"
     }
 ]
